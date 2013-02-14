@@ -1,0 +1,2949 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY GO "http://purl.org/obo/owl/GO#" >
+    <!ENTITY SO "http://purl.org/obo/owl/SO#" >
+    <!ENTITY FMA "http://purl.org/obo/owl/FMA#" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY swrl "http://www.w3.org/2003/11/swrl#" >
+    <!ENTITY RO "http://purl.org/obo/owl/OBO_REL#" >
+    <!ENTITY swrlb "http://www.w3.org/2003/11/swrlb#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY owl2xml "http://www.w3.org/2006/12/owl2-xml#" >
+    <!ENTITY snap "http://www.ifomis.org/bfo/1.1/snap#" >
+    <!ENTITY span "http://www.ifomis.org/bfo/1.1/span#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY p1 "http://www.owl-ontologies.com/assert.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+    <!ENTITY swrla "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#" >
+    <!ENTITY Ontology1207125891 "http://www.owl-ontologies.com/Ontology1207125891.owl#" >
+    <!ENTITY abox "http://swrl.stanford.edu/ontologies/built-ins/3.3/abox.owl#" >
+    <!ENTITY tbox "http://swrl.stanford.edu/ontologies/built-ins/3.3/tbox.owl#" >
+    <!ENTITY query "http://swrl.stanford.edu/ontologies/built-ins/3.3/query.owl#" >
+    <!ENTITY swrlx "http://swrl.stanford.edu/ontologies/built-ins/3.3/swrlx.owl#" >
+    <!ENTITY temporal "http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#" >
+    <!ENTITY cellularcomponent "http://purl.org/obo/obo-all/cellular_component/cellular_component.owl#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.owl-ontologies.com/Ontology1207125891.owl#"
+     xml:base="http://www.owl-ontologies.com/Ontology1207125891.owl"
+     xmlns:snap="http://www.ifomis.org/bfo/1.1/snap#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:SO="http://purl.org/obo/owl/SO#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:abox="http://swrl.stanford.edu/ontologies/built-ins/3.3/abox.owl#"
+     xmlns:cellularcomponent="http://purl.org/obo/obo-all/cellular_component/cellular_component.owl#"
+     xmlns:Ontology1207125891="http://www.owl-ontologies.com/Ontology1207125891.owl#"
+     xmlns:query="http://swrl.stanford.edu/ontologies/built-ins/3.3/query.owl#"
+     xmlns:RO="http://purl.org/obo/owl/OBO_REL#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl2xml="http://www.w3.org/2006/12/owl2-xml#"
+     xmlns:p1="http://www.owl-ontologies.com/assert.owl#"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:temporal="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl#"
+     xmlns:swrlx="http://swrl.stanford.edu/ontologies/built-ins/3.3/swrlx.owl#"
+     xmlns:tbox="http://swrl.stanford.edu/ontologies/built-ins/3.3/tbox.owl#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:FMA="http://purl.org/obo/owl/FMA#"
+     xmlns:span="http://www.ifomis.org/bfo/1.1/span#"
+     xmlns:GO="http://purl.org/obo/owl/GO#">
+    <owl:Ontology rdf:about="">
+        <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/3.3/swrla.owl"/>
+        <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/abox.owl"/>
+        <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/query.owl"/>
+        <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/swrlx.owl"/>
+        <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/tbox.owl"/>
+        <owl:imports rdf:resource="http://swrl.stanford.edu/ontologies/built-ins/3.3/temporal.owl"/>
+        <owl:imports rdf:resource="http://www.ifomis.org/bfo/1.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="&dc;description"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasBearer -->
+
+    <owl:ObjectProperty rdf:about="#hasBearer">
+        <rdfs:domain rdf:resource="&snap;DependentContinuant"/>
+        <rdfs:range rdf:resource="&snap;IndependentContinuant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasBiomoleculeBoundary -->
+
+    <owl:ObjectProperty rdf:about="#hasBiomoleculeBoundary">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Biological_Macromolecule"/>
+        <rdfs:range rdf:resource="#Biomolecule_Boundary"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasComponentPart -->
+
+    <owl:ObjectProperty rdf:about="#hasComponentPart">
+        <rdfs:range rdf:resource="&snap;Object"/>
+        <rdfs:domain rdf:resource="&snap;ObjectAggregate"/>
+        <rdfs:subPropertyOf rdf:resource="#hasPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasContainedInterval -->
+
+    <owl:ObjectProperty rdf:about="#hasContainedInterval">
+        <rdfs:domain rdf:resource="#Biological_Interval"/>
+        <rdfs:range rdf:resource="#Biological_Interval"/>
+        <rdfs:subPropertyOf rdf:resource="#hasIntervalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasCytogeneticMapLocation -->
+
+    <owl:ObjectProperty rdf:about="#hasCytogeneticMapLocation">
+        <rdfs:domain rdf:resource="#DNA_Segment"/>
+        <rdfs:range rdf:resource="#Location_on_Cytogenetic_Map"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasDispositionRole -->
+
+    <owl:ObjectProperty rdf:about="#hasDispositionRole">
+        <rdfs:domain rdf:resource="#Biological_Interval"/>
+        <rdfs:range rdf:resource="#Predisposition_Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasEndLocationOnMap -->
+
+    <owl:ObjectProperty rdf:about="#hasEndLocationOnMap">
+        <rdfs:domain rdf:resource="#End_Boundary_of_Interval"/>
+        <rdfs:subPropertyOf rdf:resource="#hasLocationOnMap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasEndPoint -->
+
+    <owl:ObjectProperty rdf:about="#hasEndPoint">
+        <rdfs:domain rdf:resource="#Biological_Interval"/>
+        <rdfs:range rdf:resource="#End_Boundary_of_Interval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasGeneLocus -->
+
+    <owl:ObjectProperty rdf:about="#hasGeneLocus">
+        <rdfs:range rdf:resource="#Gene_Locus"/>
+        <rdfs:subPropertyOf rdf:resource="#hasOccupiesLocus"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Allele_of_Gene"/>
+                    <rdf:Description rdf:about="#Gene"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasIntervalRelation -->
+
+    <owl:ObjectProperty rdf:about="#hasIntervalRelation">
+        <rdfs:range rdf:resource="#Biological_Interval"/>
+        <rdfs:domain rdf:resource="#Biological_Interval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasLinkedLoci -->
+
+    <owl:ObjectProperty rdf:about="#hasLinkedLoci">
+        <rdfs:domain rdf:resource="#Linkage_Interval"/>
+        <rdfs:range rdf:resource="#Linked_Loci"/>
+        <rdfs:subPropertyOf rdf:resource="#hasOccupiesLocus"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasLocationOnMap -->
+
+    <owl:ObjectProperty rdf:about="#hasLocationOnMap">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Boundary_Point_of_Interval"/>
+        <rdfs:range rdf:resource="#Location_on_Map"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasMap -->
+
+    <owl:ObjectProperty rdf:about="#hasMap">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Location_on_Map"/>
+        <rdfs:range rdf:resource="#Map"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasMarkerProbe -->
+
+    <owl:ObjectProperty rdf:about="#hasMarkerProbe">
+        <rdfs:domain rdf:resource="#Genetic_Marker"/>
+        <rdfs:range rdf:resource="#Genetic_Marker_Probe"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasMarkerRole -->
+
+    <owl:ObjectProperty rdf:about="#hasMarkerRole">
+        <rdfs:domain rdf:resource="#Genetic_Marker"/>
+        <rdfs:range rdf:resource="#Marker_Role"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasOccupiesLocus -->
+
+    <owl:ObjectProperty rdf:about="#hasOccupiesLocus">
+        <rdfs:domain rdf:resource="#DNA_Segment"/>
+        <rdfs:range rdf:resource="#Genomic_Site"/>
+        <rdfs:subPropertyOf rdf:resource="#hasOccupiesSite"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasOccupiesSite -->
+
+    <owl:ObjectProperty rdf:about="#hasOccupiesSite">
+        <rdfs:domain rdf:resource="#Biological_Object"/>
+        <rdfs:range rdf:resource="#Biological_Site"/>
+        <owl:inverseOf rdf:resource="#isOccupiedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasPart -->
+
+    <owl:ObjectProperty rdf:about="#hasPart"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasPolymorphismQuality -->
+
+    <owl:ObjectProperty rdf:about="#hasPolymorphismQuality">
+        <rdfs:domain rdf:resource="#Genetic_Marker"/>
+        <rdfs:range rdf:resource="#Polymorphisms"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasPrimaryAASequence -->
+
+    <owl:ObjectProperty rdf:about="#hasPrimaryAASequence">
+        <rdfs:range rdf:resource="#Amino_Acid_Sequence"/>
+        <rdfs:domain rdf:resource="#Polypeptide"/>
+        <rdfs:subPropertyOf rdf:resource="#hasPrimarySequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasPrimaryDNASequence -->
+
+    <owl:ObjectProperty rdf:about="#hasPrimaryDNASequence">
+        <rdfs:range rdf:resource="#DNA_Sequence"/>
+        <rdfs:subPropertyOf rdf:resource="#hasPrimarySequence"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DNA_Molecule"/>
+                    <rdf:Description rdf:about="#DNA_Segment"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasPrimaryRNASequence -->
+
+    <owl:ObjectProperty rdf:about="#hasPrimaryRNASequence">
+        <rdfs:domain rdf:resource="#RNA_Molecule"/>
+        <rdfs:range rdf:resource="#RNA_Sequence"/>
+        <rdfs:subPropertyOf rdf:resource="#hasPrimarySequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasPrimarySequence -->
+
+    <owl:ObjectProperty rdf:about="#hasPrimarySequence">
+        <rdfs:domain rdf:resource="#Biological_Interval"/>
+        <rdfs:range rdf:resource="#Biological_Sequence"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasResistanceRole -->
+
+    <owl:ObjectProperty rdf:about="#hasResistanceRole">
+        <rdfs:domain rdf:resource="#Biological_Interval"/>
+        <rdfs:range rdf:resource="#Resistant_Role"/>
+        <rdfs:subPropertyOf rdf:resource="#hasDispositionRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasSTSite -->
+
+    <owl:ObjectProperty rdf:about="#hasSTSite"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasStartLocationOnMap -->
+
+    <owl:ObjectProperty rdf:about="#hasStartLocationOnMap">
+        <rdfs:domain rdf:resource="#Start_Boundary_of_Interval"/>
+        <rdfs:subPropertyOf rdf:resource="#hasLocationOnMap"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasStartPoint -->
+
+    <owl:ObjectProperty rdf:about="#hasStartPoint">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="#Biological_Interval"/>
+        <rdfs:range rdf:resource="#Start_Boundary_of_Interval"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasStructure -->
+
+    <owl:ObjectProperty rdf:about="#hasStructure"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasStructurePart -->
+
+    <owl:ObjectProperty rdf:about="#hasStructurePart">
+        <rdfs:subPropertyOf rdf:resource="#hasPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasSusceptibilityRole -->
+
+    <owl:ObjectProperty rdf:about="#hasSusceptibilityRole">
+        <rdfs:domain rdf:resource="#Biological_Interval"/>
+        <rdfs:range rdf:resource="#Susceptibility_Role"/>
+        <rdfs:subPropertyOf rdf:resource="#hasDispositionRole"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasVariation -->
+
+    <owl:ObjectProperty rdf:about="#hasVariation"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isAdjacentAfter -->
+
+    <owl:ObjectProperty rdf:about="#isAdjacentAfter">
+        <rdfs:subPropertyOf rdf:resource="#hasIntervalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isAdjacentBefore -->
+
+    <owl:ObjectProperty rdf:about="#isAdjacentBefore">
+        <rdfs:subPropertyOf rdf:resource="#hasIntervalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isCodeFor -->
+
+    <owl:ObjectProperty rdf:about="#isCodeFor">
+        <rdfs:domain rdf:resource="#Gene"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Protein"/>
+                    <rdf:Description rdf:about="#RNA_Molecule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isComponentPartOf -->
+
+    <owl:ObjectProperty rdf:about="#isComponentPartOf">
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+        <rdfs:domain rdf:resource="&snap;Object"/>
+        <rdfs:range rdf:resource="&snap;ObjectAggregate"/>
+        <rdfs:subPropertyOf rdf:resource="#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isContainedIn -->
+
+    <owl:ObjectProperty rdf:about="#isContainedIn">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:range rdf:resource="#Biological_Interval"/>
+        <rdfs:subPropertyOf rdf:resource="#hasIntervalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isEndsWith -->
+
+    <owl:ObjectProperty rdf:about="#isEndsWith">
+        <rdfs:subPropertyOf rdf:resource="#hasIntervalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isLocatedAfter -->
+
+    <owl:ObjectProperty rdf:about="#isLocatedAfter">
+        <rdfs:subPropertyOf rdf:resource="#hasIntervalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isLocatedBefore -->
+
+    <owl:ObjectProperty rdf:about="#isLocatedBefore">
+        <rdfs:subPropertyOf rdf:resource="#hasIntervalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isOccupiedBy -->
+
+    <owl:ObjectProperty rdf:about="#isOccupiedBy">
+        <rdfs:range rdf:resource="#Biological_Object"/>
+        <rdfs:domain rdf:resource="#Biological_Site"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isOverlapEndWith -->
+
+    <owl:ObjectProperty rdf:about="#isOverlapEndWith">
+        <rdfs:subPropertyOf rdf:resource="#hasIntervalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isOverlapStartWith -->
+
+    <owl:ObjectProperty rdf:about="#isOverlapStartWith">
+        <rdfs:subPropertyOf rdf:resource="#hasIntervalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isPartOf -->
+
+    <owl:ObjectProperty rdf:about="#isPartOf"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isPredispositionTo -->
+
+    <owl:ObjectProperty rdf:about="#isPredispositionTo">
+        <rdfs:domain rdf:resource="#Biological_Interval"/>
+        <rdfs:range rdf:resource="#Human_Disease"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isProcessPartOf -->
+
+    <owl:ObjectProperty rdf:about="#isProcessPartOf">
+        <rdfs:range rdf:resource="&span;Process"/>
+        <rdfs:domain rdf:resource="&span;Process"/>
+        <rdfs:subPropertyOf rdf:resource="#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isStartsWith -->
+
+    <owl:ObjectProperty rdf:about="#isStartsWith">
+        <rdfs:subPropertyOf rdf:resource="#hasIntervalRelation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isStructurePartOf -->
+
+    <owl:ObjectProperty rdf:about="#isStructurePartOf">
+        <rdfs:subPropertyOf rdf:resource="#isPartOf"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isTranscribedBy -->
+
+    <owl:ObjectProperty rdf:about="#isTranscribedBy">
+        <rdfs:range rdf:resource="#Gene"/>
+        <rdfs:domain rdf:resource="#Transcript"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isTranscribedTo -->
+
+    <owl:ObjectProperty rdf:about="#isTranscribedTo">
+        <rdfs:domain rdf:resource="#Gene"/>
+        <rdfs:range rdf:resource="#Transcript"/>
+        <owl:inverseOf rdf:resource="#isTranscribedBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#isWrittenBy -->
+
+    <owl:ObjectProperty rdf:about="#isWrittenBy">
+        <rdfs:range rdf:resource="#Author"/>
+        <rdfs:domain rdf:resource="#Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2003/11/swrl#argument2 -->
+
+    <owl:ObjectProperty rdf:about="&swrl;argument2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasLengthInBase -->
+
+    <owl:DatatypeProperty rdf:about="#hasLengthInBase">
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="#hasValue">
+        <rdfs:domain rdf:resource="&snap;IndependentContinuant"/>
+        <rdfs:range>
+            <rdf:Description>
+                <rdf:type rdf:resource="&owl;DataRange"/>
+                <owl:oneOf>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&rdf;List"/>
+                        <rdf:first rdf:datatype="&xsd;string">Material</rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&rdf;List"/>
+                                <rdf:first rdf:datatype="&xsd;string">Non Material</rdf:first>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </owl:oneOf>
+            </rdf:Description>
+        </rdfs:range>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#hasVersion -->
+
+    <owl:DatatypeProperty rdf:about="#hasVersion">
+        <rdfs:domain rdf:resource="#Map"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/obo/owl/GO#Cellular_Component -->
+
+    <owl:Class rdf:about="&GO;Cellular_Component">
+        <rdfs:subClassOf rdf:resource="#Biological_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#DependentContinuant -->
+
+    <owl:Class rdf:about="&snap;DependentContinuant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Disposition -->
+
+    <owl:Class rdf:about="&snap;Disposition"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#IndependentContinuant -->
+
+    <owl:Class rdf:about="&snap;IndependentContinuant"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Object -->
+
+    <owl:Class rdf:about="&snap;Object"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#ObjectAggregate -->
+
+    <owl:Class rdf:about="&snap;ObjectAggregate"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#ObjectBoundary -->
+
+    <owl:Class rdf:about="&snap;ObjectBoundary"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Quality -->
+
+    <owl:Class rdf:about="&snap;Quality"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Role -->
+
+    <owl:Class rdf:about="&snap;Role"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/snap#Site -->
+
+    <owl:Class rdf:about="&snap;Site"/>
+    
+
+
+    <!-- http://www.ifomis.org/bfo/1.1/span#Process -->
+
+    <owl:Class rdf:about="&span;Process"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Adenine_Residue -->
+
+    <owl:Class rdf:about="#Adenine_Residue">
+        <rdfs:subClassOf rdf:resource="#Nucleic_Acid_Base_Residue"/>
+        <owl:disjointWith rdf:resource="#Cytosine_Residue"/>
+        <owl:disjointWith rdf:resource="#Guanine_Residue"/>
+        <owl:disjointWith rdf:resource="#Thymine_Residue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Allele -->
+
+    <owl:Class rdf:about="#Allele">
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >is alternative forms of genetic information</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Allele_Shared_by_Sibs -->
+
+    <owl:Class rdf:about="#Allele_Shared_by_Sibs">
+        <rdfs:subClassOf rdf:resource="#Allele"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Allele_of_Copy_Number_Polymorphism -->
+
+    <owl:Class rdf:about="#Allele_of_Copy_Number_Polymorphism">
+        <rdfs:subClassOf rdf:resource="#Allele_of_Polymorphism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Allele_of_Gene -->
+
+    <owl:Class rdf:about="#Allele_of_Gene">
+        <rdfs:subClassOf rdf:resource="#Allele"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasOccupiesLocus"/>
+                <owl:someValuesFrom rdf:resource="#Gene_Locus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Allele_of_Microsatellite -->
+
+    <owl:Class rdf:about="#Allele_of_Microsatellite">
+        <rdfs:subClassOf rdf:resource="#Allele_of_Repeat_Sequnce_Polymorphism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Allele_of_Phenotype -->
+
+    <owl:Class rdf:about="#Allele_of_Phenotype">
+        <rdfs:subClassOf rdf:resource="#Allele"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Allele_of_Polymorphism -->
+
+    <owl:Class rdf:about="#Allele_of_Polymorphism">
+        <rdfs:subClassOf rdf:resource="#Allele"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasOccupiesLocus"/>
+                <owl:someValuesFrom rdf:resource="#Polymorphic_Site"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Allele_of_Repeat_Sequnce_Polymorphism -->
+
+    <owl:Class rdf:about="#Allele_of_Repeat_Sequnce_Polymorphism">
+        <rdfs:subClassOf rdf:resource="#Allele_of_Polymorphism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Allele_of_SNP -->
+
+    <owl:Class rdf:about="#Allele_of_SNP">
+        <rdfs:subClassOf rdf:resource="#Allele_of_Polymorphism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Amino_Acid_Base_Residue -->
+
+    <owl:Class rdf:about="#Amino_Acid_Base_Residue">
+        <rdfs:subClassOf rdf:resource="#Interval_Base_Residue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Amino_Acid_Sequence -->
+
+    <owl:Class rdf:about="#Amino_Acid_Sequence">
+        <rdfs:subClassOf rdf:resource="#Biological_Sequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Author -->
+
+    <owl:Class rdf:about="#Author">
+        <rdfs:subClassOf rdf:resource="#Non_Biological_Object"/>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Biological_Interval -->
+
+    <owl:Class rdf:about="#Biological_Interval">
+        <rdfs:subClassOf rdf:resource="#Biological_Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasEndPoint"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasIntervalRelation"/>
+                <owl:someValuesFrom rdf:resource="#Biological_Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasIntervalRelation"/>
+                <owl:allValuesFrom rdf:resource="#Biological_Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasStartPoint"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isPredispositionTo"/>
+                <owl:someValuesFrom rdf:resource="#Human_Disease"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasEndPoint"/>
+                <owl:allValuesFrom rdf:resource="#End_Boundary_of_Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasStartPoint"/>
+                <owl:allValuesFrom rdf:resource="#Start_Boundary_of_Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPrimarySequence"/>
+                <owl:allValuesFrom rdf:resource="#Biological_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >the spatial continuous physical entity which contains ordered biological sets (DNA segments, Genetic Markers, Nucleic Acid Base Residues, RNA segments, Protein segments) between two boundaries: start boundary and end boundary on a chromosome, RNA or protein.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Biological_Macromolecule -->
+
+    <owl:Class rdf:about="#Biological_Macromolecule">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >biological macromolecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Biological_Molecule"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasBiomoleculeBoundary"/>
+                <owl:allValuesFrom rdf:resource="#Biomolecule_Boundary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Biological_Molecule -->
+
+    <owl:Class rdf:about="#Biological_Molecule">
+        <rdfs:subClassOf rdf:resource="#Biological_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Biological_Object -->
+
+    <owl:Class rdf:about="#Biological_Object">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >biological object</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+        <owl:disjointWith rdf:resource="#Non_Biological_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Biological_ObjectAggregate -->
+
+    <owl:Class rdf:about="#Biological_ObjectAggregate">
+        <rdfs:subClassOf rdf:resource="&snap;ObjectAggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Biological_Sequence -->
+
+    <owl:Class rdf:about="#Biological_Sequence">
+        <rdfs:subClassOf rdf:resource="#Biological_Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasStructure"/>
+                <owl:someValuesFrom rdf:resource="#Linear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasStructure"/>
+                <owl:allValuesFrom rdf:resource="#Linear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >the liner sequence of simple repeating units composes DNA molecule, RNA molecule or Protein.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Biological_Site -->
+
+    <owl:Class rdf:about="#Biological_Site">
+        <rdfs:subClassOf rdf:resource="&snap;Site"/>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Biological_Small_Molecule -->
+
+    <owl:Class rdf:about="#Biological_Small_Molecule">
+        <rdfs:subClassOf rdf:resource="#Biological_Molecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Biomolecule_Boundary -->
+
+    <owl:Class rdf:about="#Biomolecule_Boundary">
+        <rdfs:subClassOf rdf:resource="&snap;ObjectBoundary"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >biomolecule boundary is the surface of a biomolecule ,which is a lower dimensional part of a molecule. biomolecule bounday  can separate a biological molecule from the rest of the existing entities in the world.(for example, DNA molecule is separate from rest part in the cell nucleus by DNA molecule boundary)</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >different with DNA segment, which is part of DNA molecule, and is surrounding by other DNA segment or</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Book -->
+
+    <owl:Class rdf:about="#Book">
+        <rdfs:subClassOf rdf:resource="#Non_Biological_Object"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isWrittenBy"/>
+                <owl:someValuesFrom rdf:resource="#Author"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Boundary_Point_of_Interval -->
+
+    <owl:Class rdf:about="#Boundary_Point_of_Interval">
+        <rdfs:subClassOf rdf:resource="&snap;ObjectBoundary"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasStartLocationOnMap"/>
+                <owl:someValuesFrom rdf:resource="#Location_on_Map"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasStartLocationOnMap"/>
+                <owl:allValuesFrom rdf:resource="#Location_on_Map"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The starts and ends of biological interval, which associate to a location on a genetic or physical map.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Chromosome -->
+
+    <owl:Class rdf:about="#Chromosome">
+        <rdfs:subClassOf rdf:resource="#Organelle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasStructurePart"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="#DNA_Molecule"/>
+                            <rdf:Description rdf:about="#Histone"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isStructurePartOf"/>
+                <owl:someValuesFrom rdf:resource="#Nuclear_Genome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Chromosome_Abnormality -->
+
+    <owl:Class rdf:about="#Chromosome_Abnormality">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >chromosome abnormality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Genetic_Variation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasBearer"/>
+                <owl:someValuesFrom rdf:resource="#Chromosome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Chromosome_Part -->
+
+    <owl:Class rdf:about="#Chromosome_Part">
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Coding_RNA_Molecule -->
+
+    <owl:Class rdf:about="#Coding_RNA_Molecule">
+        <rdfs:subClassOf rdf:resource="#RNA_Molecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Common_Disease -->
+
+    <owl:Class rdf:about="#Common_Disease">
+        <rdfs:label rdf:datatype="&xsd;string">common disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Genetic_Contributed_Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Contig -->
+
+    <owl:Class rdf:about="#Contig">
+        <rdfs:subClassOf rdf:resource="#Genetic_Interval_Aggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Copy_Number_Polymorphism -->
+
+    <owl:Class rdf:about="#Copy_Number_Polymorphism">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >copy number polymorphism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Polymorphisms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasBearer"/>
+                <owl:someValuesFrom rdf:resource="#Allele_of_Copy_Number_Polymorphism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#CpG_Island -->
+
+    <owl:Class rdf:about="#CpG_Island">
+        <rdfs:label rdf:datatype="&xsd;string">CpG Island</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Gene_Regulatory_Element"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >CpG islands are commonly defined as regions of DNA of at least 200 bp in length and that have a G+C content above 50% and a ratio of observed vs. expected CpGs close to or above 0.6. ( Ref. Gardiner-Garden and Fromer (1987) ). Sets of CG repeat elements, usually found upstream of transcribed regions of the genome.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Cytogenetic_Map -->
+
+    <owl:Class rdf:about="#Cytogenetic_Map">
+        <rdfs:subClassOf rdf:resource="#Genetics_Map"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >a map of a chromosome based on its banding pattern.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Cytosine_Residue -->
+
+    <owl:Class rdf:about="#Cytosine_Residue">
+        <rdfs:subClassOf rdf:resource="#Nucleic_Acid_Base_Residue"/>
+        <owl:disjointWith rdf:resource="#Guanine_Residue"/>
+        <owl:disjointWith rdf:resource="#Thymine_Residue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#DNA_Interval -->
+
+    <owl:Class rdf:about="#DNA_Interval">
+        <rdfs:subClassOf rdf:resource="#Genetic_Interval"/>
+        <owl:disjointWith rdf:resource="#RNA_Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#DNA_Marker -->
+
+    <owl:Class rdf:about="#DNA_Marker">
+        <rdfs:subClassOf rdf:resource="#Genetic_Marker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#DNA_Molecule -->
+
+    <owl:Class rdf:about="#DNA_Molecule">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >Dexyribonuleic acid molecule</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#Nucleic_Acid"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasBiomoleculeBoundary"/>
+                        <owl:someValuesFrom rdf:resource="#Biomolecule_Boundary"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasPrimaryDNASequence"/>
+                        <owl:someValuesFrom rdf:resource="#DNA_Sequence"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasBiomoleculeBoundary"/>
+                        <owl:allValuesFrom rdf:resource="#Biomolecule_Boundary"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="#hasPrimaryDNASequence"/>
+                        <owl:allValuesFrom rdf:resource="#DNA_Sequence"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointWith rdf:resource="#RNA_Molecule"/>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#DNA_Replication -->
+
+    <owl:Class rdf:about="#DNA_Replication">
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The process for synthesis DNA. DNA-&gt;DNA</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#DNA_Segment -->
+
+    <owl:Class rdf:about="#DNA_Segment">
+        <rdfs:subClassOf rdf:resource="#DNA_Interval"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isStructurePartOf"/>
+                <owl:someValuesFrom rdf:resource="#DNA_Molecule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPrimaryDNASequence"/>
+                <owl:allValuesFrom rdf:resource="#DNA_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isStructurePartOf"/>
+                <owl:allValuesFrom rdf:resource="#DNA_Molecule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasCytogeneticMapLocation"/>
+                <owl:someValuesFrom rdf:resource="#Location_on_Cytogenetic_Map"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPrimaryDNASequence"/>
+                <owl:someValuesFrom rdf:resource="#DNA_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >naturally material segment of DNA molecule located in a chromosome</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#DNA_Sequence -->
+
+    <owl:Class rdf:about="#DNA_Sequence">
+        <rdfs:subClassOf rdf:resource="#Nucleotide_Sequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Deletion_Polymorphism -->
+
+    <owl:Class rdf:about="#Deletion_Polymorphism">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >deletion polymorphism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Polymorphisms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Detect_Role -->
+
+    <owl:Class rdf:about="#Detect_Role">
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#End_Boundary_of_Interval -->
+
+    <owl:Class rdf:about="#End_Boundary_of_Interval">
+        <rdfs:subClassOf rdf:resource="#Boundary_Point_of_Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Enhancer -->
+
+    <owl:Class rdf:about="#Enhancer">
+        <rdfs:subClassOf rdf:resource="#Gene_Regulatory_Element"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >a set of short sequence elements which stimulate transcription of a gene and whose function is not critically dependent on their precise position or orientation.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="#Human_Molecular_Genetics3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Ensembl_Cytogenetic_Band -->
+
+    <owl:Class rdf:about="#Ensembl_Cytogenetic_Band">
+        <rdfs:subClassOf rdf:resource="#Location_on_Cytogenetic_Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Entrex_Gene_Cytogenetic_Band -->
+
+    <owl:Class rdf:about="#Entrex_Gene_Cytogenetic_Band">
+        <rdfs:subClassOf rdf:resource="#Location_on_Cytogenetic_Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Exon -->
+
+    <owl:Class rdf:about="#Exon">
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isContainedIn"/>
+                <owl:someValuesFrom rdf:resource="#Gene"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Gene -->
+
+    <owl:Class rdf:about="#Gene">
+        <rdfs:subClassOf rdf:resource="#Genetic_Interval"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isCodeFor"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="#Protein"/>
+                            <rdf:Description rdf:about="#RNA_Molecule"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isTranscribedTo"/>
+                <owl:someValuesFrom rdf:resource="#Transcript"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isComponentPartOf"/>
+                <owl:someValuesFrom rdf:resource="#Nuclear_Genome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasGeneLocus"/>
+                <owl:someValuesFrom rdf:resource="#Gene_Locus"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPrimarySequence"/>
+                <owl:someValuesFrom rdf:resource="#DNA_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPrimaryRNASequence"/>
+                <owl:someValuesFrom rdf:resource="#RNA_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment
+            >in RNA virus, there will be RNA interval codes for protein.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Gene_Expression -->
+
+    <owl:Class rdf:about="#Gene_Expression">
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Gene_Family -->
+
+    <owl:Class rdf:about="#Gene_Family">
+        <rdfs:subClassOf rdf:resource="#Genetic_Interval_Aggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Gene_Locus -->
+
+    <owl:Class rdf:about="#Gene_Locus">
+        <rdfs:subClassOf rdf:resource="#Locus"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isOccupiedBy"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="#Allele"/>
+                            <rdf:Description rdf:about="#Gene"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Gene_Regulatory_Element -->
+
+    <owl:Class rdf:about="#Gene_Regulatory_Element">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >gene regulatory element</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genetic_Contributed_Disease -->
+
+    <owl:Class rdf:about="#Genetic_Contributed_Disease">
+        <rdfs:subClassOf rdf:resource="#Human_Disease"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Disease caused or partly caused by intrinic genetic reason.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genetic_Interval -->
+
+    <owl:Class rdf:about="#Genetic_Interval">
+        <rdfs:subClassOf rdf:resource="#Biological_Interval"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DNA_Interval"/>
+                    <rdf:Description rdf:about="#RNA_Interval"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en"
+            >the spatial continuous physical entity which contains ordered genomic  sets(DNA, RNA, Allele, Marker,etc.) between and including two     points(Nucleic_Acid_Base_Residue) on a chromosome or RNA molecule which must have a liner primary sequence sturcture. synomous terms are: segmemt. region. It is genomic, so that protein is not the child of this class. it is continuous, so that neither genome(colletive of chormosomes), nor genotype diploid(collective alleles comes from different chromosomes), nor gene family(collective of genes of same homolog located to different chromosomes) are genomic interval. Whereas gene cluster which are juxtapositioned genes can be subclass of genomic interval. By length, the longest Genomic Interval is the interval with same start point and end point with chromosome, and smallest is when one start point and end point are equal( one residue of DNA or RNA). Interval holds property interval relation.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genetic_Interval_Aggregate -->
+
+    <owl:Class rdf:about="#Genetic_Interval_Aggregate">
+        <rdfs:subClassOf rdf:resource="#Biological_ObjectAggregate"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genetic_Marker -->
+
+    <owl:Class rdf:about="#Genetic_Marker">
+        <rdfs:subClassOf rdf:resource="#DNA_Interval"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasMarkerProbe"/>
+                <owl:someValuesFrom rdf:resource="#Genetic_Marker_Probe"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasMarkerRole"/>
+                <owl:someValuesFrom rdf:resource="#Marker_Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPolymorphismQuality"/>
+                <owl:someValuesFrom rdf:resource="#Polymorphisms"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasMarkerRole"/>
+                <owl:allValuesFrom rdf:resource="#Marker_Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasOccupiesSite"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="#Location_on_Linkage_Map"/>
+                            <rdf:Description rdf:about="#Location_on_Physical_Map"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genetic_Marker_Probe -->
+
+    <owl:Class rdf:about="#Genetic_Marker_Probe">
+        <rdfs:subClassOf rdf:resource="#Probe"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genetic_Variation -->
+
+    <owl:Class rdf:about="#Genetic_Variation">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >genetic variation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genetics_Map -->
+
+    <owl:Class rdf:about="#Genetics_Map">
+        <rdfs:label rdf:datatype="&xsd;string">genetics map</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Map"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >&quot;A map represents order and distance among markers along a chromosome.&quot;(GDB description of its object Map)
+we can think genetic map as a marker sequence modeling same with DNA seuqence.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genome -->
+
+    <owl:Class rdf:about="#Genome">
+        <rdfs:subClassOf rdf:resource="#Biological_ObjectAggregate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasComponentPart"/>
+                <owl:someValuesFrom rdf:resource="#DNA_Molecule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en"
+            >The total set of different DNA molecules of an organelle, cell or organism. the human genome consists of 25 different molecules: the mitochondrial DNA molecules plus the 24 different chromosomal DNA molecules.(Human Molecular Genetics3 by Tom Strachan &amp; Andrew P.Read)</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="#Human_Molecular_Genetics3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genomic_Aberration -->
+
+    <owl:Class rdf:about="#Genomic_Aberration">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >genomic aberration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Genetic_Variation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasBearer"/>
+                <owl:someValuesFrom rdf:resource="#Genome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genomic_DNA -->
+
+    <owl:Class rdf:about="#Genomic_DNA">
+        <rdfs:subClassOf rdf:resource="#DNA_Molecule"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isStructurePartOf"/>
+                <owl:someValuesFrom rdf:resource="#Chromosome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string">also gDNA</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genomic_Site -->
+
+    <owl:Class rdf:about="#Genomic_Site">
+        <rdfs:subClassOf rdf:resource="#Biological_Site"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Genotype_Diploid -->
+
+    <owl:Class rdf:about="#Genotype_Diploid">
+        <rdfs:subClassOf rdf:resource="#Genetic_Interval_Aggregate"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasComponentPart"/>
+                <owl:someValuesFrom rdf:resource="#Allele"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasComponentPart"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >collective of allele which comes from different homologus  chromosomes respecitvely.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Guanine_Residue -->
+
+    <owl:Class rdf:about="#Guanine_Residue">
+        <rdfs:subClassOf rdf:resource="#Nucleic_Acid_Base_Residue"/>
+        <owl:disjointWith rdf:resource="#Thymine_Residue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#HGNC_Cytogenetic_Band -->
+
+    <owl:Class rdf:about="#HGNC_Cytogenetic_Band">
+        <rdfs:subClassOf rdf:resource="#Location_on_Cytogenetic_Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Haplotype -->
+
+    <owl:Class rdf:about="#Haplotype">
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasContainedInterval"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasContainedInterval"/>
+                <owl:someValuesFrom rdf:resource="#Allele_of_Polymorphism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Histone -->
+
+    <owl:Class rdf:about="#Histone">
+        <rdfs:subClassOf rdf:resource="#Protein"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isStructurePartOf"/>
+                <owl:someValuesFrom rdf:resource="#Chromosome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Human_Disease -->
+
+    <owl:Class rdf:about="#Human_Disease">
+        <rdfs:label rdf:datatype="&xsd;string">human disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Infectious_Disease -->
+
+    <owl:Class rdf:about="#Infectious_Disease">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >infectious disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Non_Genetic_Contributed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Insertion_Polymorphism -->
+
+    <owl:Class rdf:about="#Insertion_Polymorphism">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >insertion polymorphism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Polymorphisms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Intergenic_Segment -->
+
+    <owl:Class rdf:about="#Intergenic_Segment">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >intergenic region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >The DNA segment between genes.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Interval_Base_Residue -->
+
+    <owl:Class rdf:about="#Interval_Base_Residue">
+        <rdfs:subClassOf rdf:resource="#Biological_Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Intron -->
+
+    <owl:Class rdf:about="#Intron">
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isContainedIn"/>
+                <owl:someValuesFrom rdf:resource="#Gene"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#LD_Block -->
+
+    <owl:Class rdf:about="#LD_Block">
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Linear -->
+
+    <owl:Class rdf:about="#Linear">
+        <rdfs:subClassOf rdf:resource="#Primary_Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Linkage_Interval -->
+
+    <owl:Class rdf:about="#Linkage_Interval">
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasLinkedLoci"/>
+                <owl:someValuesFrom rdf:resource="#Linked_Loci"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Linkage_Map -->
+
+    <owl:Class rdf:about="#Linkage_Map">
+        <rdfs:subClassOf rdf:resource="#Genetics_Map"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A map based upon frequency of recombination between genomic segments, resulting in the ordering of markers along a chromosome backbone, usually measured in centiMorgans (cM).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Linked_Loci -->
+
+    <owl:Class rdf:about="#Linked_Loci">
+        <rdfs:subClassOf rdf:resource="#Locus"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isOccupiedBy"/>
+                <owl:someValuesFrom rdf:resource="#Linkage_Interval"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Location_on_Cytogenetic_Map -->
+
+    <owl:Class rdf:about="#Location_on_Cytogenetic_Map">
+        <rdfs:subClassOf rdf:resource="#Location_on_Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Location_on_Linkage_Map -->
+
+    <owl:Class rdf:about="#Location_on_Linkage_Map">
+        <rdfs:subClassOf rdf:resource="#Location_on_Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Location_on_Map -->
+
+    <owl:Class rdf:about="#Location_on_Map">
+        <rdfs:subClassOf rdf:resource="&snap;Site"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasMap"/>
+                <owl:allValuesFrom rdf:resource="#Map"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Location_on_Physical_Map -->
+
+    <owl:Class rdf:about="#Location_on_Physical_Map">
+        <rdfs:subClassOf rdf:resource="#Location_on_Map"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Locus -->
+
+    <owl:Class rdf:about="#Locus">
+        <rdfs:subClassOf rdf:resource="#Genomic_Site"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >a unique chromosomal location defining the position of an individual gene or DNA sequence.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="#Human_Molecular_Genetics3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Map -->
+
+    <owl:Class rdf:about="#Map">
+        <rdfs:subClassOf rdf:resource="#Non_Biological_Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Marker_Role -->
+
+    <owl:Class rdf:about="#Marker_Role">
+        <rdfs:label rdf:datatype="&xsd;string">marker role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Mendelian_Disease -->
+
+    <owl:Class rdf:about="#Mendelian_Disease">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >mendelian disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Genetic_Contributed_Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Microsatellite_Marker -->
+
+    <owl:Class rdf:about="#Microsatellite_Marker">
+        <rdfs:subClassOf rdf:resource="#Polymorphic_DNA_Marker"/>
+        <owl:disjointWith rdf:resource="#SNP_Marker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Microsatellite_Polymorphism -->
+
+    <owl:Class rdf:about="#Microsatellite_Polymorphism">
+        <rdfs:subClassOf rdf:resource="#Repeat_Sequnce_Polymorphism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Minisatellite_Polymorphism -->
+
+    <owl:Class rdf:about="#Minisatellite_Polymorphism">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >minisatellite polymorphism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Repeat_Sequnce_Polymorphism"/>
+        <rdfs:comment rdf:datatype="&xsd;string">VNTR</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Mitochondiral_Genome -->
+
+    <owl:Class rdf:about="#Mitochondiral_Genome">
+        <rdfs:subClassOf rdf:resource="#Genome"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasComponentPart"/>
+                <owl:someValuesFrom rdf:resource="#mtDNA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Mitochondrion -->
+
+    <owl:Class rdf:about="#Mitochondrion">
+        <rdfs:subClassOf rdf:resource="#Organelle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Module_Placeholder -->
+
+    <owl:Class rdf:about="#Module_Placeholder">
+        <rdfs:subClassOf rdf:resource="#Common_Disease"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >the place holder for a disease module.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Mutant -->
+
+    <owl:Class rdf:about="#Mutant">
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Mutation -->
+
+    <owl:Class rdf:about="#Mutation">
+        <rdfs:label rdf:datatype="&xsd;string">mutation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Genetic_Variation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasBearer"/>
+                <owl:someValuesFrom rdf:resource="#Mutant"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >a change in one base paitr in chromosome</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Non_Biological_Object -->
+
+    <owl:Class rdf:about="#Non_Biological_Object">
+        <rdfs:subClassOf rdf:resource="&snap;Object"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Non_Coding_RNA_Molecule -->
+
+    <owl:Class rdf:about="#Non_Coding_RNA_Molecule">
+        <rdfs:subClassOf rdf:resource="#RNA_Molecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Non_Genetic_Contributed -->
+
+    <owl:Class rdf:about="#Non_Genetic_Contributed">
+        <rdfs:subClassOf rdf:resource="#Human_Disease"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >Extrinic caused disease, such as virus caused infectious disease or injury caused by car accident.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Non_STS_Microsatellite_Marker -->
+
+    <owl:Class rdf:about="#Non_STS_Microsatellite_Marker">
+        <rdfs:subClassOf rdf:resource="#Microsatellite_Marker"/>
+        <owl:disjointWith rdf:resource="#STS_Microsatellite_Marker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Non_Single_Site_Mutation -->
+
+    <owl:Class rdf:about="#Non_Single_Site_Mutation">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >Segmental Mutation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Mutation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Nuclear_Genome -->
+
+    <owl:Class rdf:about="#Nuclear_Genome">
+        <rdfs:subClassOf rdf:resource="#Genome"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasComponentPart"/>
+                <owl:someValuesFrom rdf:resource="#Genomic_DNA"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en"
+            >set of 24 different chromosomal DNA molecules located in nucleus</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Nucleic_Acid -->
+
+    <owl:Class rdf:about="#Nucleic_Acid">
+        <rdfs:label rdf:datatype="&xsd;string">nucleic acid</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="#DNA_Molecule"/>
+                    <rdf:Description rdf:about="#RNA_Molecule"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="#Polymer"/>
+        <owl:disjointWith rdf:resource="#Polypeptide"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Nucleic_Acid_Base_Residue -->
+
+    <owl:Class rdf:about="#Nucleic_Acid_Base_Residue">
+        <rdfs:subClassOf rdf:resource="#Interval_Base_Residue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Nucleotide_Sequence -->
+
+    <owl:Class rdf:about="#Nucleotide_Sequence">
+        <rdfs:subClassOf rdf:resource="#Biological_Sequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Organelle -->
+
+    <owl:Class rdf:about="#Organelle">
+        <rdfs:subClassOf rdf:resource="&GO;Cellular_Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Part_of_Exon -->
+
+    <owl:Class rdf:about="#Part_of_Exon">
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isStructurePartOf"/>
+                <owl:allValuesFrom rdf:resource="#Exon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Part_of_Intron -->
+
+    <owl:Class rdf:about="#Part_of_Intron">
+        <rdfs:subClassOf rdf:resource="#DNA_Segment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isStructurePartOf"/>
+                <owl:allValuesFrom rdf:resource="#Intron"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Physical_Map -->
+
+    <owl:Class rdf:about="#Physical_Map">
+        <rdfs:subClassOf rdf:resource="#Genetics_Map"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >An ordered set of genomic DNA clones demarcated with restriction endonuclease recognition or sequence tagged sites. The distance between sites is mesured in base pair.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Polymer -->
+
+    <owl:Class rdf:about="#Polymer">
+        <rdfs:label rdf:datatype="&xsd;string">polymer</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Biological_Macromolecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Polymorphic_DNA_Marker -->
+
+    <owl:Class rdf:about="#Polymorphic_DNA_Marker">
+        <rdfs:subClassOf rdf:resource="#DNA_Marker"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasMarkerRole"/>
+                <owl:allValuesFrom rdf:resource="#Marker_Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="#STS_Non_Polymorphic_Marker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Polymorphic_Site -->
+
+    <owl:Class rdf:about="#Polymorphic_Site">
+        <rdfs:subClassOf rdf:resource="#Genomic_Site"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isOccupiedBy"/>
+                <owl:someValuesFrom rdf:resource="#Allele_of_Polymorphism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >a genomic site that is occupied by alleles of polymorphic</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Polymorphisms -->
+
+    <owl:Class rdf:about="#Polymorphisms">
+        <rdfs:label rdf:datatype="&xsd;string">polymorohisms</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Genetic_Variation"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasBearer"/>
+                <owl:someValuesFrom rdf:resource="#DNA_Segment"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="en"
+            >Looser usages among molecular genetics include (1) any sequence variant present at a frequency &gt;1% in a population (2) any non-pathogenic sequence variant, regardless of frequency.</rdfs:comment>
+        <rdfs:comment xml:lang="en"
+            >strictly, the existense of two or more variants(alleles, phenotypes, sequence variants, chromosomal structural variants) at significant frequencies in the population.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="#Human_Molecular_Genetics3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Polypeptide -->
+
+    <owl:Class rdf:about="#Polypeptide">
+        <rdfs:subClassOf rdf:resource="#Polymer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isStructurePartOf"/>
+                <owl:someValuesFrom rdf:resource="#Protein"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPrimarySequence"/>
+                <owl:allValuesFrom rdf:resource="#Amino_Acid_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPrimarySequence"/>
+                <owl:someValuesFrom rdf:resource="#Amino_Acid_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Polypeptide_Encoding_Gene -->
+
+    <owl:Class rdf:about="#Polypeptide_Encoding_Gene">
+        <rdfs:subClassOf rdf:resource="#Gene"/>
+        <owl:disjointWith rdf:resource="#Pseudogene"/>
+        <owl:disjointWith rdf:resource="#RNA_Gene"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Predisposition_Role -->
+
+    <owl:Class rdf:about="#Predisposition_Role">
+        <rdfs:subClassOf rdf:resource="&snap;Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Predisposition_to_Disease -->
+
+    <owl:Class rdf:about="#Predisposition_to_Disease">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >predisposition to disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&snap;Disposition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Primary_Structure -->
+
+    <owl:Class rdf:about="#Primary_Structure">
+        <rdfs:subClassOf rdf:resource="#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Primary_Transcript -->
+
+    <owl:Class rdf:about="#Primary_Transcript">
+        <rdfs:subClassOf rdf:resource="#Transcript"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Probe -->
+
+    <owl:Class rdf:about="#Probe">
+        <rdfs:subClassOf rdf:resource="#DNA_Interval"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >a fragment of DNA of variable length (usually 100-1000 bases long), which is used to detect in DNA or RNA samples the presence of nucleotide sequences (the DNA target) that are complementary to the sequence in the probe.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Promoter -->
+
+    <owl:Class rdf:about="#Promoter">
+        <rdfs:subClassOf rdf:resource="#Gene_Regulatory_Element"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >a combination of short sequence elements, normally just upstream of a gene, to which RNA polymerase binds in order to initiate transcription of the gene.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Protein -->
+
+    <owl:Class rdf:about="#Protein">
+        <rdfs:subClassOf rdf:resource="#Polymer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Protein_Interval -->
+
+    <owl:Class rdf:about="#Protein_Interval">
+        <rdfs:subClassOf rdf:resource="#Biological_Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Protein_Markers -->
+
+    <owl:Class rdf:about="#Protein_Markers">
+        <rdfs:subClassOf rdf:resource="#Genetic_Marker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Pseudogene -->
+
+    <owl:Class rdf:about="#Pseudogene">
+        <rdfs:subClassOf rdf:resource="#Gene"/>
+        <owl:disjointWith rdf:resource="#RNA_Gene"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#RNA_Gene -->
+
+    <owl:Class rdf:about="#RNA_Gene">
+        <rdfs:subClassOf rdf:resource="#Gene"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isCodeFor"/>
+                <owl:someValuesFrom rdf:resource="#RNA_Molecule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isCodeFor"/>
+                <owl:allValuesFrom rdf:resource="#RNA_Molecule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#RNA_Interval -->
+
+    <owl:Class rdf:about="#RNA_Interval">
+        <rdfs:subClassOf rdf:resource="#Genetic_Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#RNA_Molecule -->
+
+    <owl:Class rdf:about="#RNA_Molecule">
+        <rdfs:subClassOf rdf:resource="#Nucleic_Acid"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPrimaryRNASequence"/>
+                <owl:someValuesFrom rdf:resource="#RNA_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPrimaryRNASequence"/>
+                <owl:allValuesFrom rdf:resource="#RNA_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >ribonucleic acid</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#RNA_Segment -->
+
+    <owl:Class rdf:about="#RNA_Segment">
+        <rdfs:subClassOf rdf:resource="#RNA_Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#RNA_Sequence -->
+
+    <owl:Class rdf:about="#RNA_Sequence">
+        <rdfs:subClassOf rdf:resource="#Nucleotide_Sequence"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Radiation_Hybrid_Map -->
+
+    <owl:Class rdf:about="#Radiation_Hybrid_Map">
+        <rdfs:label rdf:datatype="&xsd;string"></rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Genetics_Map"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >A map based on the co-occurrence of markers in a panel of radiation hybrid cell lines, resulting in an ordering of markers along a chromosome backbone.&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Repeat_Sequnce_Polymorphism -->
+
+    <owl:Class rdf:about="#Repeat_Sequnce_Polymorphism">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >repeat sequence polymorphism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Polymorphisms"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasBearer"/>
+                <owl:someValuesFrom rdf:resource="#Allele_of_Repeat_Sequnce_Polymorphism"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Resistant_Role -->
+
+    <owl:Class rdf:about="#Resistant_Role">
+        <rdfs:subClassOf rdf:resource="#Predisposition_Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Restriction_Fragment_Length_Polymorphisms -->
+
+    <owl:Class rdf:about="#Restriction_Fragment_Length_Polymorphisms">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >restriction fragment length polymorphism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Polymorphisms"/>
+        <rdfs:comment rdf:datatype="&xsd;string">RFLPs</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#SNP_Marker -->
+
+    <owl:Class rdf:about="#SNP_Marker">
+        <rdfs:subClassOf rdf:resource="#Polymorphic_DNA_Marker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#STS_Marker -->
+
+    <owl:Class rdf:about="#STS_Marker">
+        <rdfs:subClassOf rdf:resource="#DNA_Marker"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasMarkerRole"/>
+                <owl:someValuesFrom rdf:resource="#Marker_Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasMarkerRole"/>
+                <owl:allValuesFrom rdf:resource="#Marker_Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#STS_Microsatellite_Marker -->
+
+    <owl:Class rdf:about="#STS_Microsatellite_Marker">
+        <rdfs:subClassOf rdf:resource="#Microsatellite_Marker"/>
+        <rdfs:subClassOf rdf:resource="#STS_Marker"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasMarkerRole"/>
+                <owl:allValuesFrom rdf:resource="#Marker_Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasMarkerRole"/>
+                <owl:someValuesFrom rdf:resource="#Marker_Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#STS_Non_Polymorphic_Marker -->
+
+    <owl:Class rdf:about="#STS_Non_Polymorphic_Marker">
+        <rdfs:subClassOf rdf:resource="#STS_Marker"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasMarkerRole"/>
+                <owl:someValuesFrom rdf:resource="#Marker_Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasMarkerRole"/>
+                <owl:allValuesFrom rdf:resource="#Marker_Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Satellite_Polymorphism -->
+
+    <owl:Class rdf:about="#Satellite_Polymorphism">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >satellite polymorphism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Repeat_Sequnce_Polymorphism"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Sequence_Feature_Map -->
+
+    <owl:Class rdf:about="#Sequence_Feature_Map">
+        <rdfs:subClassOf rdf:resource="#Physical_Map"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >High resolution physical maps indicating nucleotide-level features of the genome such as exons, introns, regulatory regions, etc.&quot;</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Sequence_Tagged_Site -->
+
+    <owl:Class rdf:about="#Sequence_Tagged_Site">
+        <rdfs:subClassOf rdf:resource="#Genomic_Site"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isOccupiedBy"/>
+                <owl:someValuesFrom rdf:resource="#STS_Marker"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string">STS</rdfs:comment>
+        <dc:description rdf:datatype="&xsd;string"
+            >any unique piece of DNA for which a specific PCR assay has been designed, so that any DNA sample can be easily tested for its presence or absense.</dc:description>
+        <rdfs:isDefinedBy rdf:resource="#Human_Molecular_Genetics3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Single-strand_Conformational_Polymorphism -->
+
+    <owl:Class rdf:about="#Single-strand_Conformational_Polymorphism">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >single-strand conformatinal polymorphism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Polymorphisms"/>
+        <rdfs:comment rdf:datatype="&xsd;string">SSCP</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Single_Nucleotide_Polymorphism -->
+
+    <owl:Class rdf:about="#Single_Nucleotide_Polymorphism">
+        <rdfs:label rdf:datatype="&xsd;string">SNP</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Polymorphisms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Single_Site_Mutation -->
+
+    <owl:Class rdf:about="#Single_Site_Mutation">
+        <rdfs:label rdf:datatype="&xsd;string">point mutation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Mutation"/>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Start_Boundary_of_Interval -->
+
+    <owl:Class rdf:about="#Start_Boundary_of_Interval">
+        <rdfs:subClassOf rdf:resource="#Boundary_Point_of_Interval"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Structure -->
+
+    <owl:Class rdf:about="#Structure">
+        <rdfs:subClassOf rdf:resource="&snap;Quality"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Susceptibility_Role -->
+
+    <owl:Class rdf:about="#Susceptibility_Role">
+        <rdfs:subClassOf rdf:resource="#Predisposition_Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#ThreeD_Structure -->
+
+    <owl:Class rdf:about="#ThreeD_Structure">
+        <rdfs:subClassOf rdf:resource="#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Thymine_Residue -->
+
+    <owl:Class rdf:about="#Thymine_Residue">
+        <rdfs:subClassOf rdf:resource="#Nucleic_Acid_Base_Residue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Transcript -->
+
+    <owl:Class rdf:about="#Transcript">
+        <rdfs:subClassOf rdf:resource="#RNA_Molecule"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPrimaryRNASequence"/>
+                <owl:allValuesFrom rdf:resource="#RNA_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isTranscribedBy"/>
+                <owl:someValuesFrom rdf:resource="#Gene"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#hasPrimaryRNASequence"/>
+                <owl:someValuesFrom rdf:resource="#RNA_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >An RNA synthesized on a DNA or RNA template by an RNA polymerase.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Transcription -->
+
+    <owl:Class rdf:about="#Transcription">
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
+        <rdfs:comment rdf:datatype="&xsd;string">DNA-&gt;RNA</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Translation -->
+
+    <owl:Class rdf:about="#Translation">
+        <rdfs:subClassOf rdf:resource="&span;Process"/>
+        <rdfs:comment rdf:datatype="&xsd;string">RNA-&gt;Protein</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Trauma -->
+
+    <owl:Class rdf:about="#Trauma">
+        <rdfs:label rdf:datatype="&xsd;string">trauma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Non_Genetic_Contributed"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#TwoD_Structure -->
+
+    <owl:Class rdf:about="#TwoD_Structure">
+        <rdfs:subClassOf rdf:resource="#Structure"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#cDNA -->
+
+    <owl:Class rdf:about="#cDNA">
+        <rdfs:label rdf:datatype="&xsd;string"></rdfs:label>
+        <rdfs:label rdf:datatype="&xsd;string"
+            >complementary DNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#DNA_Molecule"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >In genetics, complementary DNA (cDNA) is DNA synthesized from a mature mRNA template in a reaction catalyzed by the enzyme reverse transcriptase.(wikipedia)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#mRNA -->
+
+    <owl:Class rdf:about="#mRNA">
+        <rdfs:label rdf:datatype="&xsd;string">messenger RNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#Transcript"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#miRNA -->
+
+    <owl:Class rdf:about="#miRNA">
+        <rdfs:label rdf:datatype="&xsd;string">Micro RNAs</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RNA_Molecule"/>
+        <rdfs:comment rdf:datatype="&xsd;string"
+            >short(22nt) RNA molecules encoded within normal genomes that have a role in regulation of gene expression and maybe also of chromatin structure. Sometimes called small temporal RNA(stRNA).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="#Human_Molecular_Genetics3"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#msDNA -->
+
+    <owl:Class rdf:about="#msDNA">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >multicopy single-stranded DNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#DNA_Molecule"/>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#mtDNA -->
+
+    <owl:Class rdf:about="#mtDNA">
+        <rdfs:label rdf:datatype="&xsd;string"
+            >Mitochondrial DNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#DNA_Molecule"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="#isStructurePartOf"/>
+                <owl:allValuesFrom rdf:resource="#Mitochondiral_Genome"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment rdf:datatype="&xsd;string"></rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#rRNA -->
+
+    <owl:Class rdf:about="#rRNA">
+        <rdfs:label rdf:datatype="&xsd;string">ribosomal RNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RNA_Molecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#tRNA -->
+
+    <owl:Class rdf:about="#tRNA">
+        <rdfs:label rdf:datatype="&xsd;string">transfer RNA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="#RNA_Molecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#An_Introduction_to_Human_Molecular_Genetics -->
+
+    <Book rdf:about="#An_Introduction_to_Human_Molecular_Genetics">
+        <isWrittenBy rdf:resource="#Jack_J._Pastermak"/>
+    </Book>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Andrew_P._Read -->
+
+    <Author rdf:about="#Andrew_P._Read"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Human_Molecular_Genetics3 -->
+
+    <Book rdf:about="#Human_Molecular_Genetics3">
+        <isWrittenBy rdf:resource="#Andrew_P._Read"/>
+        <isWrittenBy rdf:resource="#Tom_Strachan"/>
+    </Book>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Jack_J._Pastermak -->
+
+    <Author rdf:about="#Jack_J._Pastermak"/>
+    
+
+
+    <!-- http://www.owl-ontologies.com/Ontology1207125891.owl#Tom_Strachan -->
+
+    <Author rdf:about="#Tom_Strachan"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <swrl:Imp rdf:about="#hasStartLocationOnMap1">
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="#hasStartLocationOnMap"/>
+                        <swrl:argument2 rdf:resource="#m"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="#hasStartPoint"/>
+                                <swrl:argument1 rdf:resource="#y"/>
+                                <swrl:argument2 rdf:resource="#z"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="#isStartsWith"/>
+                                        <swrl:argument2 rdf:resource="#m"/>
+                                        <swrl:argument1 rdf:resource="#z"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="#hasStartLocationOnMap"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#y"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp rdf:about="#isOverlapStartWith1">
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="#isOverlapStartWith"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#y"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="#isStructurePartOf"/>
+                                <swrl:argument1 rdf:resource="#x"/>
+                                <swrl:argument2 rdf:resource="#z"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="#isStartsWith"/>
+                        <swrl:argument2 rdf:resource="#y"/>
+                        <swrl:argument1 rdf:resource="#z"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp rdf:about="#isOverlapEndWith1">
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="#isOverlapEndWith"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#y"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest rdf:resource="&rdf;nil"/>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="#isStructurePartOf"/>
+                                <swrl:argument1 rdf:resource="#x"/>
+                                <swrl:argument2 rdf:resource="#z"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="#isEndsWith"/>
+                        <swrl:argument2 rdf:resource="#y"/>
+                        <swrl:argument1 rdf:resource="#z"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Imp rdf:about="#isLocatedAfter1">
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="#isLocatedBefore"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#y"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="#isLocatedAfter"/>
+                        <swrl:argument2 rdf:resource="#x"/>
+                        <swrl:argument1 rdf:resource="#y"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+    </swrl:Imp>
+    <swrl:Imp rdf:about="#hasStartLocationOnMap2">
+        <swrl:head>
+            <swrl:AtomList>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="#hasStartLocationOnMap"/>
+                        <swrl:argument2 rdf:resource="#m"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:head>
+        <swrl:body>
+            <swrl:AtomList>
+                <rdf:rest>
+                    <swrl:AtomList>
+                        <rdf:rest>
+                            <swrl:AtomList>
+                                <rdf:rest rdf:resource="&rdf;nil"/>
+                                <rdf:first>
+                                    <swrl:IndividualPropertyAtom>
+                                        <swrl:propertyPredicate rdf:resource="#isStartsWith"/>
+                                        <swrl:argument1 rdf:resource="#m"/>
+                                        <swrl:argument2 rdf:resource="#z"/>
+                                    </swrl:IndividualPropertyAtom>
+                                </rdf:first>
+                            </swrl:AtomList>
+                        </rdf:rest>
+                        <rdf:first>
+                            <swrl:IndividualPropertyAtom>
+                                <swrl:propertyPredicate rdf:resource="#hasStartPoint"/>
+                                <swrl:argument1 rdf:resource="#y"/>
+                                <swrl:argument2 rdf:resource="#z"/>
+                            </swrl:IndividualPropertyAtom>
+                        </rdf:first>
+                    </swrl:AtomList>
+                </rdf:rest>
+                <rdf:first>
+                    <swrl:IndividualPropertyAtom>
+                        <swrl:propertyPredicate rdf:resource="#hasStartLocationOnMap"/>
+                        <swrl:argument1 rdf:resource="#x"/>
+                        <swrl:argument2 rdf:resource="#y"/>
+                    </swrl:IndividualPropertyAtom>
+                </rdf:first>
+            </swrl:AtomList>
+        </swrl:body>
+    </swrl:Imp>
+    <swrl:Variable rdf:about="#m"/>
+    <swrl:Variable rdf:about="#y"/>
+    <swrl:Variable rdf:about="#z"/>
+    <swrl:Variable rdf:about="#x"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 2.2.1.1101) http://owlapi.sourceforge.net -->
+
