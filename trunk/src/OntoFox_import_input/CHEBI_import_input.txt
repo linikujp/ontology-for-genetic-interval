@@ -1,0 +1,21 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ogi/CHEBI_import.owl
+
+[Source ontology]
+CHEBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CHEBI_33708 #amino-acid residue
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CHEBI_33708 #amino-acid residue
+subClassOf http://purl.obolibrary.org/obo/OGI.owl#Interval_Base_Residue
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+
+[Source annotation URIs to be excluded]
