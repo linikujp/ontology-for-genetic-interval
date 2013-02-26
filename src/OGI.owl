@@ -661,6 +661,7 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <owl:disjointWith rdf:resource="&obo;OGI.owl#Cytosine_Residue"/>
         <owl:disjointWith rdf:resource="&obo;OGI.owl#Guanine_Residue"/>
         <owl:disjointWith rdf:resource="&obo;OGI.owl#Thymine_Residue"/>
+        <rdfs:comment xml:lang="en">CHEBI will release this term soon in April. Check it and will improt later.</rdfs:comment>
     </owl:Class>
     
 
@@ -785,14 +786,20 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#Biological_Object"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#isPredispositionTo"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Human_Disease"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Biological_Interval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasStartPoint"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Start_Boundary_of_Interval"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#isPredispositionTo"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Human_Disease"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -804,13 +811,7 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasStartPoint"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Biological_Interval"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Start_Boundary_of_Interval"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -878,13 +879,13 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasStructure"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Linear"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Linear"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasStructure"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Linear"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Linear"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">the liner sequence of simple repeating units composes DNA molecule, RNA molecule or Protein.</obo:IAO_0000115>
@@ -954,13 +955,13 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Exon"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Exon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPart"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Exon"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Exon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1087,6 +1088,7 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#Nucleic_Acid_Base_Residue"/>
         <owl:disjointWith rdf:resource="&obo;OGI.owl#Guanine_Residue"/>
         <owl:disjointWith rdf:resource="&obo;OGI.owl#Thymine_Residue"/>
+        <rdfs:comment xml:lang="en">CHEBI will release this term soon in April. Check it and will improt later.</rdfs:comment>
     </owl:Class>
     
 
@@ -1160,26 +1162,26 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#DNA_Interval"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryDNASequence"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#DNA_Sequence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryDNASequence"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#DNA_Sequence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasCytogeneticMapLocation"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Location_on_Cytogenetic_Map"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryDNASequence"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#DNA_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#isStructurePartOf"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI.owl#DNA_Molecule"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryDNASequence"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#DNA_Sequence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1280,21 +1282,8 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#Genetic_Interval"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#RNA_Sequence"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#isCodeFor"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OGI.owl#Protein"/>
-                            <rdf:Description rdf:about="&obo;OGI.owl#RNA_Molecule"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimarySequence"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#DNA_Sequence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1311,14 +1300,27 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimarySequence"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#DNA_Sequence"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#isTranscribedTo"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Transcript"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#isTranscribedTo"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Transcript"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#RNA_Sequence"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#isCodeFor"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OGI.owl#Protein"/>
+                            <rdf:Description rdf:about="&obo;OGI.owl#RNA_Molecule"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string">in RNA virus, there will be RNA interval codes for protein.</rdfs:comment>
@@ -1426,25 +1428,13 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerRole"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerProbe"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Genetic_Marker_Probe"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPolymorphismQuality"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Polymorphisms"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerRole"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1458,6 +1448,18 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerRole"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerProbe"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Genetic_Marker_Probe"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A genetic marker is a gene or DNA sequence with a known location on a chromosome that can be used to identify individuals or species. It can be described as a variation (which may arise due to mutation or alteration in the genomic loci) that can be observed. A genetic marker may be a short DNA sequence, such as a sequence surrounding a single base-pair change (single nucleotide polymorphism, SNP), or a long one, like minisatellites.</obo:IAO_0000115>
@@ -1579,6 +1581,7 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         <rdfs:label xml:lang="en">guanine residue</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#Nucleic_Acid_Base_Residue"/>
         <owl:disjointWith rdf:resource="&obo;OGI.owl#Thymine_Residue"/>
+        <rdfs:comment xml:lang="en">CHEBI will release this term soon in April. Check it and will improt later.</rdfs:comment>
     </owl:Class>
     
 
@@ -1600,13 +1603,13 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasContainedInterval"/>
-                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Allele_of_Polymorphism"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasContainedInterval"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Allele_of_Polymorphism"/>
+                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2006,6 +2009,7 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
     <owl:Class rdf:about="&obo;OGI.owl#Nucleic_Acid_Base_Residue">
         <rdfs:label xml:lang="en">nucleic acid base residue</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#Interval_Base_Residue"/>
+        <rdfs:comment xml:lang="en">CHEBI will release this term soon in April. Check it and will improt later.</rdfs:comment>
     </owl:Class>
     
 
@@ -2237,6 +2241,7 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
     <owl:Class rdf:about="&obo;OGI.owl#Protein_Interval">
         <rdfs:label xml:lang="en">protein interval</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#Biological_Interval"/>
+        <obo:IAO_0000115 xml:lang="en">The biological material interval that is a protein, which is made of amino acid chain.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2268,13 +2273,13 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#isCodeFor"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#RNA_Molecule"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#RNA_Molecule"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#isCodeFor"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#RNA_Molecule"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#RNA_Molecule"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2297,13 +2302,13 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#RNA_Sequence"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#RNA_Sequence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#RNA_Sequence"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#RNA_Sequence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string">ribonucleic acid</rdfs:comment>
@@ -2413,13 +2418,13 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerRole"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerRole"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2434,13 +2439,13 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerRole"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerRole"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#Marker_Role"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2553,6 +2558,7 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
     <owl:Class rdf:about="&obo;OGI.owl#Thymine_Residue">
         <rdfs:label xml:lang="en">thymine residue</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#Nucleic_Acid_Base_Residue"/>
+        <rdfs:comment xml:lang="en">CHEBI will release this term soon in April. Check it and will improt later.</rdfs:comment>
     </owl:Class>
     
 
@@ -2563,8 +2569,8 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#RNA_Molecule"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#RNA_Sequence"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#isTranscribedBy"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Gene"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2575,8 +2581,8 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#isTranscribedBy"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Gene"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#RNA_Sequence"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string">An RNA synthesized on a DNA or RNA template by an RNA polymerase.</rdfs:comment>
@@ -2965,17 +2971,17 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         <swrl:body>
             <rdf:Description>
                 <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#hasStartLocationOnMap"/>
-                        <swrl:argument1 rdf:resource="&OGI;x"/>
-                        <swrl:argument2 rdf:resource="&OGI;y"/>
-                    </rdf:Description>
-                </rdf:first>
                 <rdf:rest>
                     <rdf:Description>
                         <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#hasStartPoint"/>
+                                <swrl:argument1 rdf:resource="&OGI;y"/>
+                                <swrl:argument2 rdf:resource="&OGI;z"/>
+                            </rdf:Description>
+                        </rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -2990,16 +2996,16 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
                                 </rdf:first>
                             </rdf:Description>
                         </rdf:rest>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#hasStartPoint"/>
-                                <swrl:argument1 rdf:resource="&OGI;y"/>
-                                <swrl:argument2 rdf:resource="&OGI;z"/>
-                            </rdf:Description>
-                        </rdf:first>
                     </rdf:Description>
                 </rdf:rest>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#hasStartLocationOnMap"/>
+                        <swrl:argument1 rdf:resource="&OGI;x"/>
+                        <swrl:argument2 rdf:resource="&OGI;y"/>
+                    </rdf:Description>
+                </rdf:first>
             </rdf:Description>
         </swrl:body>
         <swrl:head>
@@ -3019,6 +3025,20 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#isOverlapEndWith"/>
+                        <swrl:argument1 rdf:resource="&OGI;x"/>
+                        <swrl:argument2 rdf:resource="&OGI;y"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
         <swrl:body>
             <rdf:Description>
                 <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -3046,20 +3066,6 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
                 </rdf:rest>
             </rdf:Description>
         </swrl:body>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#isOverlapEndWith"/>
-                        <swrl:argument1 rdf:resource="&OGI;x"/>
-                        <swrl:argument2 rdf:resource="&OGI;y"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&swrl;Imp"/>
@@ -3083,6 +3089,14 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
                 <rdf:rest>
                     <rdf:Description>
                         <rdf:type rdf:resource="&swrl;AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#hasStartPoint"/>
+                                <swrl:argument1 rdf:resource="&OGI;y"/>
+                                <swrl:argument2 rdf:resource="&OGI;z"/>
+                            </rdf:Description>
+                        </rdf:first>
                         <rdf:rest>
                             <rdf:Description>
                                 <rdf:type rdf:resource="&swrl;AtomList"/>
@@ -3097,14 +3111,6 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
                                 </rdf:first>
                             </rdf:Description>
                         </rdf:rest>
-                        <rdf:first>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                                <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#hasStartPoint"/>
-                                <swrl:argument1 rdf:resource="&OGI;y"/>
-                                <swrl:argument2 rdf:resource="&OGI;z"/>
-                            </rdf:Description>
-                        </rdf:first>
                     </rdf:Description>
                 </rdf:rest>
                 <rdf:first>
@@ -3117,6 +3123,37 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
                 </rdf:first>
             </rdf:Description>
         </swrl:body>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&swrl;Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#isLocatedBefore"/>
+                        <swrl:argument1 rdf:resource="&OGI;x"/>
+                        <swrl:argument2 rdf:resource="&OGI;y"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="&swrl;AtomList"/>
+                <rdf:rest rdf:resource="&rdf;nil"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#isLocatedAfter"/>
+                        <swrl:argument2 rdf:resource="&OGI;x"/>
+                        <swrl:argument1 rdf:resource="&OGI;y"/>
+                    </rdf:Description>
+                </rdf:first>
+            </rdf:Description>
+        </swrl:head>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&swrl;Imp"/>
@@ -3161,37 +3198,6 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
                 </rdf:first>
             </rdf:Description>
         </swrl:head>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&swrl;Imp"/>
-        <swrl:head>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#isLocatedAfter"/>
-                        <swrl:argument2 rdf:resource="&OGI;x"/>
-                        <swrl:argument1 rdf:resource="&OGI;y"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:head>
-        <swrl:body>
-            <rdf:Description>
-                <rdf:type rdf:resource="&swrl;AtomList"/>
-                <rdf:rest rdf:resource="&rdf;nil"/>
-                <rdf:first>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="&swrl;IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="&obo;OGI.owl#isLocatedBefore"/>
-                        <swrl:argument1 rdf:resource="&OGI;x"/>
-                        <swrl:argument2 rdf:resource="&OGI;y"/>
-                    </rdf:Description>
-                </rdf:first>
-            </rdf:Description>
-        </swrl:body>
     </rdf:Description>
 </rdf:RDF>
 
