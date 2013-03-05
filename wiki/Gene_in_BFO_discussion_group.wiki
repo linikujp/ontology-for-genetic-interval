@@ -1,0 +1,1117 @@
+#summary One-sentence summary of this page.
+#labels gene,BFO
+
+= 'Gene' is discussed in BFO-discussion group =
+
+	Michel Dumontier 	Post reply
+
+2/20/07
+
+Hi,
+ I have a question about the relationship between continuant entities
+that have functional parts. For instance, chromosomes are complexes
+comprised of DNA (among other things) which play an important role in
+the transfer of genetic information. They do so, in part, by having
+special regions called genes. Such regions are not physically distinct
+from the DNA strand on which they lie, but can be demarcated along its
+sequence of nucleotides.  These regions may also be copied and made
+part of another entity, and if done correctly, still retain their
+functionality.
+My feeling is a gene a fiat object part of a DNA strand. Do you agree?
+
+If so, what is the proper relation between an object and it's fiat
+object part? Is the most accurate relationship between them a "part
+of", "proper part of" or "improper part of"?
+
+Thanks!
+
+-=Michel=-
+
+  
+
+
+
+
+pierre...@gmail.com 	Post reply
+
+2/20/07
+
+On 2/20/07, Michel Dumontier <michel.d...@gmail.com> wrote:
+>
+> Hi,
+
+>  I have a question about the relationship between continuant entities
+
+> that have functional parts. For instance, chromosomes are complexes
+
+> comprised of DNA (among other things) which play an important role in
+
+> the transfer of genetic information. They do so, in part, by having
+
+> special regions called genes. Such regions are not physically distinct
+
+> from the DNA strand on which they lie, but can be demarcated along its
+
+> sequence of nucleotides.  These regions may also be copied and made
+
+> part of another entity, and if done correctly, still retain their
+
+> functionality.
+
+>
+
+> My feeling is a gene a fiat object part of a DNA strand. Do you agree?
+That sounds very reasonnable indeed, as long as you are talking about
+an undetached segment of an entire molecule
+
+
+> If so, what is the proper relation between an object and it's fiat
+
+> object part?
+
+> Is the most accurate relationship between them a "part
+
+> of", "proper part of" or "improper part of"?
+OBJECT has_proper_part PART
+
+or
+
+PART proper_part_of OBJECT
+
+"improper part" means "identical with"
+
+cheers
+pierre
+
+
+> Thanks!
+
+>
+
+> -=Michel=-
+
+>
+
+>
+
+ 
+
+
+
+Chris Mungall 	Post reply
+
+2/20/07
+
+Hi Michel
+I agree largely with what you are saying. Of course, for some people,  
+the instance of the gene is the dependent entity (information)  
+carried by that and many other sequentially identical or similar  
+regions; this is just a terminological issue, but we should be aware  
+of it.
+
+One question remaining in my mind is whether we need some special  
+treatment of the sequential nature of genes and DNA strands. There  
+would be many advantages to treating sequences are linearly connected  
+mereological sums, but we can't do this is mereological sums are by  
+definition non-connected.
+
+Is it a fiat object part? What are the boundaries? Is it the the  
+boundaries of the maximally connected set of regions that act as  
+templates for RNA transcription? Or does it include regulatory  
+regions? If we choose the former then it may be the case that many  
+genes have bona-fide boundaries (although transcription errors are  
+not uncommon), especially in simpler organisms. In fact it could be  
+argued that all gene boundaries are bona-fide, if we take into  
+account the discrete sequential nature of genes and DNA sequences. A  
+gene boundary is never 3/4 of the way along a nucleic acid base.
+
+Also, there are some genes that are parts of two strands of DNA, or  
+discontiguous regions of the same strand. The drosophila mod(mdg4)  
+gene is split over two strands, but template from both strands is  
+transcribed into a single transcript (or rather multiple alternate  
+spliceforms). I believe there may also be pairing across homologous  
+chromosome pairs. C elegans genes have transpliced leader gene  
+regions that may be the length of a chromosome away from the main  
+gene region.
+
+We can get round this by denying the biologists their terminology,  
+although my favoured solution would be to say the wordier "contiguous  
+gene region" when we are talking about a connected region, and  
+"mereological sum of gene regions potentially encoding a single RNA  
+molecule" for the latter case. CARO had to come to a similar  
+arrangement for "organ".
+
+The next question is the relation between the gene region and the RNA  
+molecule that is transcribed from it.
+
+- show quoted text -
+ 
+
+
+
+Smith, Barry 	Post reply
+
+2/20/07
+
+At 04:30 PM 2/20/2007, you wrote:
+>Hi,
+>  I have a question about the relationship between continuant entities
+
+>that have functional parts. For instance, chromosomes are complexes
+
+>comprised of DNA (among other things) which play an important role in
+
+>the transfer of genetic information. They do so, in part, by having
+
+>special regions called genes. Such regions are not physically distinct
+
+>from the DNA strand on which they lie, but can be demarcated along its
+
+>sequence of nucleotides.  These regions may also be copied and made
+
+>part of another entity, and if done correctly, still retain their
+
+>functionality.
+
+>
+
+>My feeling is a gene a fiat object part of a DNA strand. Do you agree?
+I there are physical discontinuities between the gene and its 
+surroundings; thus not a fiat object in sense of a proper fiat part 
+of the DNA whole (though it is a proper part of the whole); the 
+fiatness arises, I think, rather in the way in which The Philippines 
+are a fiat whole made out of many non-fiat parts called islands. 
+There are many ways of dividing up the sum total of islands in the 
+Pacific, which we do not distinguish by giving them a name.
+BS
+
+
+>If so, what is the proper relation between an object and it's fiat
+
+>object part? Is the most accurate relationship between them a "part
+
+>of", "proper part of" or "improper part of"?
+
+>
+
+>Thanks!
+
+>
+>-=Michel=-
+>
+>
+>
+
+ 
+
+
+
+Michel Dumontier 	Post reply
+
+2/20/07
+Re: [bfo-discuss] Re: Genes?
+
+Interesting... 
+
+So what is the BFO continuant entity that is the mereological sum of parts of objects that are physically discontinuous?
+
+-=Michel=-
+
+ 
+
+
+
+pierre...@gmail.com 	Post reply
+
+2/21/07
+Re: [bfo-discuss] Re: Genes?
+
+> So what is the BFO continuant entity that is the mereological sum of parts
+
+> of objects that are physically discontinuous?
+this falls under aggregate of objects
+
+see the discussions about molecules and their parts initiated by
+Stefan Schultz on this list mid january
+
+cheers
+pierre
+
+
+>
+
+>
+
+> -=Michel=-
+
+>
+
+>
+>  >
+>
+
+ 
+
+
+
+Matthew Pocock 	Post reply
+
+2/21/07
+
+Gene is a fairy-story we tell ourselves to make interpreting and learning the 
+biology less intimidating. The biology doesn't give too hoots what collection 
+of entities we label as genes, be they physical, conceptual, procedural or 
+otherwise. Giving a single deffinition of 'gene' that is meant to be a 
+best-fit makes me feel a bit uneasy. We use gene to mean a variety of 
+different things, each assuming a particular model of inheritence, biological 
+function and so on. Gene is as ambiguous for us as Mother is in normal 
+English (biological/birth/addopted/propper/...), and as far as people's 
+perceptions, there are clearly 'canonical' examples of genes that are more 
+central, obvious, clear than others.
+So I'd rather we thought about a number of concepts, each that work in a 
+specific one of these contexts (together with a concept identifier), and then 
+as an extra layer in a lexicon, associate them all with the word 'gene'. At 
+the end of this message are a few deffinitions I got from google define:gene, 
+together with what I think their assumed contexts are. I think once you've 
+started to think about 'gene' like this, it becomes clear why some things are 
+recognised as 'good examples' of a gene, and others are not.
+
+I would say that the genetic, genomic and informational deffinitions of gene 
+are simplified models of what is going on. They are ways to make sense of a 
+complex collection of interweaving processes.  Off the top of my head, and 
+using fairly in-exact deffinitions, I can come up with these vaguely 
+plausable simplifications of biology that let us cope:
+
+Organisms pass on specifications to their offspring. The Offspring develop and 
+behave in accordance with this specification. The physical tokens passed to 
+the offspring that embody the specification are the genes. We tend to name 
+them by projecting them by the development and behavior that they specify 
+when the gene is not the 'normal' version.
+
+Some regions of DNA are 'read' by the cellular machinery. This gives rise to 
+interactions that affect the behaviour of the cell containing that DNA or 
+products which effect alterations to the physical and chemical 
+characteristics of the cell. This allows the cell to exhibit behavior, 
+particularly regarding how it interacts with it's emediate physical 
+environment (including other cells, media, ...). These interactions may 
+trigger emergent properties at the community or organism or super-organism 
+level. A collection of (possibly overlapping, possibly contiguous) regions 
+that are highly correlated in the interactions they support constitute a 
+gene.
+
+The genetic material of an organism encodes information which can be read 
+by/enacted and specifies the molecules in the organism. This information 
+comes in units that have very high mutual information, and which affect the 
+fitness of the organism. The combination of the mutual information and the 
+fitness means that these 'information bundles' have effectively identical 
+selection pressures during evolution. Each of these 'information bundles' is 
+a gene.
+
+Each significantly overlapping set of transcripts within a genome is a gene.
+
+'Good examples' of genes are the bundle of: a single contiguous region of DNA 
+that produces a single transcript that encodes for a single protein that has 
+a single whole-organism phenotype associated with each allele. Each allele is 
+associated with a single version of the DNA sequence of that region. 
+Selection pressures act upon alleles of this gene with little correlation 
+with how other genes are selected. We use 'gene' to stand for most of these 
+parts, like we use hammer to stand for the physical tool, and for the action 
+of hitting something, and figuratively in phrases like "in my speach, I realy 
+wanted to hammer it home".
+
+At the end of the day, genes are names we give to bits of interesting biology 
+that emerges from the biochemistry, the emergent behaviour, the interaction 
+with an environment, and prior conceits we hold about the 'correct phenotype' 
+for a particular group of organisms. We then attach these to bits of physical 
+or informational or processural stuff when there is a reasonable correlation. 
+Sorting out these different models and the underlying physical stuff 
+ontologically would probably be a very fruitfull way of avoiding generating 
+yet another broken deffinition of a gene.
+
+Matthew
+
+url:        www.mise.org/mise/index.jsp
+def:        The fundamental physical and functional unit of heredity
+ctxt:        classical genetics; assumes discrete units of heredity, that heredity is 
+based upon physical units, and presumably some pheontype must be associated 
+with every gene. Genes are discrete and disjoint.
+
+url:        www.alz.org/Resources/Glossary.asp
+def:        The basic unit of heredity; a section of DNA coding for a particular 
+trait
+ctxt:        folk classical genetics, knowing that DNA is the 'gentic material'
+
+url:        www.ashgi.org/color/genetic_terms.htm
+def:        A unit of information on a chromosome
+ctxt:        folk genetics, beads-on-a-string model of chromosome/gene
+
+url:        
+www.mesothelioma-settlement-information.org/Mesothelioma_Legal_Glossary.php
+def:        a segment of DNA that contains information on hereditary characteristics 
+such as hair color, eye color, and height, as well as susceptibility to 
+certain diseases. Women who have BRCA1 or BRCA2 gene mutations (defects) have 
+an inherited tendency to develop breast cancer.
+ctxt:        classical genetics and folk genomics; segment of DNA gives rise to 
+phenotype. Segment is assumed to be contiguous. The segment is heritable, and 
+therefore the phenotype associated with it is heritable. The link between 
+gene and phenotype is a 'tendency'.
+
+url:        www.dphpc.ox.ac.uk/opcgg/glossary.htm
+def:        A sequence of DNA that represents a fundamental unit of heredity. Most 
+genes encode proteins, but some code for RNA molecules.
+ctxt:        genomics and classical genetics; sequence 'pattern' as a fundamental 
+unit of heredity, no phenotype required, genes 'encode' something that 'does' 
+something; unclear if DNA is the sole engine of heredity or if other things 
+could fulfill that role.
+
+url:        www.bioinformatics.buffalo.edu/current_buffalo/glossary.html
+def:        The fundamental physical and functional unit of heredity. A gene is an 
+ordered sequence of nucleotides located in a particular position on a 
+particular chromosome that encodes a specific functional product (ie, a 
+protein or RNA molecule). See gene expression.
+ctxt:        simplified genomics, informatics; heredity by association 
+between 'information' encoded as ordering on nucleotides, 'decoded' into 
+functional products. Gene is both a physical entity and a 'functional' 
+entity.
+
+url:        www.ashgi.org/color/genetic_terms.htm
+def:        A unit of information on a chromosome
+ctxt:        lay informational and lay genetic
+
+ 
+
+
+
+pierre...@gmail.com 	Post reply
+
+2/21/07
+Re: [bfo-discuss] Re: Genes?
+
+This starts becoming strange. We all know there are all these issues
+with 'gene'. Michel started with a question about a piece of molecule,
+that's fairly definite.
+cheers
+pierre
+
+- show quoted text -
+ 
+
+
+
+Matthew Pocock 	Post reply
+
+2/21/07
+Re: [bfo-discuss] Re: Genes?
+
+Oh, I agree - defining a region within a larger DNA molecule is straighforward 
+and very usefull. It's also probably fairly simple to define wholes and parts 
+of genetic information, and the assocation between the information part/whole 
+hierachy and the physical material part/whole hierachy.
+However, the original post identified a region of a DNA molecule with a gene, 
+which I think opens a can of worms. I would just sudgest that we are better 
+served associating regions of DNA molecules with stuff we know about and can 
+directly observe or measure e.g. this region is transcribed, rather than 
+saying they 'are' genes; and then seperatety formalising the different 
+contexts within which genes can be usefully talked about (classical genetics, 
+information through evolution, biochemistry etc.); and lastly capturing when 
+a particular context models the 'observable' stuff and our understanding of 
+it well, and when it does not, and how the model entites map onto 
+the 'observable' ones.
+
+Matthew
+
+On Wednesday 21 February 2007 12:58, Pierre Grenon wrote:
+> This starts becoming strange. We all know there are all these issues
+
+> with 'gene'. Michel started with a question about a piece of molecule,
+
+> that's fairly definite.
+
+>
+> cheers
+> pierre
+>
+On 2/20/07, Michel Dumontier <michel.d...@gmail.com> wrote:
+> My feeling is a gene a fiat object part of a DNA strand. Do you agree?
+
+ 
+
+
+
+Chris Mungall 	Post reply
+
+2/21/07
+Re: [bfo-discuss] Re: Genes?
+
+
+Hi again Matt
+- show quoted text -
+- show quoted text -
+BFO isn't really about concepts or lexicons. It may be the case the  
+word gene is too loaded, in which case we should use non-loaded terms  
+and talk of transcribed regions of DNA
+
+
+
+> I would say that the genetic, genomic and informational  
+
+> deffinitions of gene
+
+> are simplified models of what is going on. They are ways to make  
+
+> sense of a
+
+> complex collection of interweaving processes.  Off the top of my  
+
+> head, and
+
+> using fairly in-exact deffinitions, I can come up with these vaguely
+
+> plausable simplifications of biology that let us cope:
+
+>
+
+> Organisms pass on specifications to their offspring. The Offspring  
+
+> develop and
+
+> behave in accordance with this specification. The physical tokens  
+
+> passed to
+
+> the offspring that embody the specification are the genes. We tend  
+
+> to name
+
+> them by projecting them by the development and behavior that they  
+
+> specify
+
+> when the gene is not the 'normal' version.
+
+We need a wider account of all these things, which I think will  
+require some basic treatment of 'information' within the BFO  
+framework. But I don't think we need them for a definition of gene.
+
+Note we don't name instances of genes (if we are going with the gene  
+as region of DNA definition); there's some 10^17 (?) contained in the  
+volume of my body right now. Our names, such as "p53" denote gene  
+types, or perhaps the information pattern generically dependent on  
+the various DNA-region instances (sometimes we name the gene patterns  
+by 'abnormal' phenotype eg hedgehog, sometimes by 'normal' phenotype  
+eg VEGF, though all these entities existed prior to our naming them,  
+so BFO doesn't need to worry about these)
+
+> Some regions of DNA are 'read' by the cellular machinery. This  
+
+> gives rise to
+
+> interactions that affect the behaviour of the cell containing that  
+
+> DNA or
+
+> products which effect alterations to the physical and chemical
+
+> characteristics of the cell. This allows the cell to exhibit behavior,
+
+> particularly regarding how it interacts with it's emediate physical
+
+> environment (including other cells, media, ...). These interactions  
+
+> may
+
+> trigger emergent properties at the community or organism or super- 
+
+> organism
+
+> level. A collection of (possibly overlapping, possibly contiguous)  
+
+> regions
+
+> that are highly correlated in the interactions they support  
+
+> constitute a
+
+> gene.
+
+We have the rest of the OBO Foundry to help with this - this is all  
+good stuff for the gloss of the definition, but the definition itself  
+doesn't depend on accounts of super-organisms
+
+> The genetic material of an organism encodes information which can  
+
+> be read
+
+> by/enacted and specifies the molecules in the organism. This  
+
+> information
+
+> comes in units that have very high mutual information, and which  
+
+> affect the
+
+> fitness of the organism. The combination of the mutual information  
+
+> and the
+
+> fitness means that these 'information bundles' have effectively  
+
+> identical
+
+> selection pressures during evolution. Each of these 'information  
+
+> bundles' is
+
+> a gene.
+
+Think that our account of DNA, genes and so must have some account of  
+the sequential-information-bearing roles of these entities, which  
+requires some BFO treatment of information
+
+> Each significantly overlapping set of transcripts within a genome  
+
+> is a gene.
+
+Do you mean set as in abstract set, or as in an actual collection /  
+mereological sum?
+
+Transcripts are RNA molecules floating in the cell, so it doesn't  
+seem to make sense to call this bundle or this abstract set a gene.  
+"transcripts within a genome" doesn't make sense with my definitions  
+of transcript, which is essentially synonymous with RNA molecule.
+
+If you mean transcript as a shorthand for transcript-encoding-region- 
+on-genome, then I am happy with defining a gene as a maximally  
+overlapping genomic region spanning these transcript-encoding-regions  
+(now you and I both know the "overlapping" part needs a bit of work  
+to account for dicistronic genes, genes-within-introns and so on, but  
+I don't think this is hard). I don't really care whether we call  
+instances of these regions 'genes', although I do think biologists  
+would be happy with this.
+
+So my definition of gene requires a definition of transcript/RNA- 
+encoding-region; I don't think this should be too hard. I'd need some  
+help from the BFO/OBO-RO folks with the encoded_by/copied_from relation.
+
+> 'Good examples' of genes are the bundle of: a single contiguous  
+
+> region of DNA
+
+> that produces a single transcript that encodes for a single protein  
+
+> that has
+
+> a single whole-organism phenotype associated with each allele. Each  
+
+> allele is
+
+> associated with a single version of the DNA sequence of that region.
+
+> Selection pressures act upon alleles of this gene with little  
+
+> correlation
+
+> with how other genes are selected. We use 'gene' to stand for most  
+
+> of these
+
+> parts, like we use hammer to stand for the physical tool, and for  
+
+> the action
+
+> of hitting something, and figuratively in phrases like "in my  
+
+> speach, I realy
+
+> wanted to hammer it home".
+
+Let's not get distracted by the erroneous way people use language.  
+And I'm not sure why single-whole organism phenoypes are important at  
+this stage
+
+> At the end of the day, genes are names we give to bits of  
+
+> interesting biology
+
+> that emerges from the biochemistry, the emergent behaviour, the  
+
+> interaction
+
+> with an environment, and prior conceits we hold about the 'correct  
+
+> phenotype'
+
+> for a particular group of organisms. We then attach these to bits  
+
+> of physical
+
+> or informational or processural stuff when there is a reasonable  
+
+> correlation.
+
+> Sorting out these different models and the underlying physical stuff
+
+> ontologically would probably be a very fruitfull way of avoiding  
+
+> generating
+
+> yet another broken deffinition of a gene.
+agreed!
+
+- show quoted text -
+ 
+
+
+
+Matthew Pocock 	Post reply
+
+2/21/07
+Re: [bfo-discuss] Re: Genes?
+
+Hi Chris :)
+On Wednesday 21 February 2007 17:45, Chris Mungall wrote:
+> Hi again Matt
+>
+> On Feb 21, 2007, at 3:55 AM, Matthew Pocock wrote:
+
+> BFO isn't really about concepts or lexicons. It may be the case the
+
+> word gene is too loaded, in which case we should use non-loaded terms
+
+> and talk of transcribed regions of DNA
+[out of order]
+
+
+> So my definition of gene requires a definition of transcript/RNA-
+
+> encoding-region; I don't think this should be too hard. I'd need some
+
+> help from the BFO/OBO-RO folks with the encoded_by/copied_from relation.
+Transcribed region is prety unambiguous. In a world where you model things 
+with roles, we can nail it down nice and tight - something like:
+
+transcription - a biochemical process that builds an RNA molecule from a DNA 
+template. It has these roles transcribed region and transcript, among others.
+
+transcribed region is an input role of transcription. Fillers of this role 
+must be a part of a DNA molecule, identified with a contiguous region of 
+nucleotides.
+
+transcript is an output role of transcription. Fillers of this role must be 
+RNA molecules.
+
+I don't know where you sit with roles, and other ways of modelling activeties, 
+but you get the idea. Thinking about it, I'm not even sure that the DNA 
+refered to above /has/ to be a chromosome, or that the process /has/ to take 
+place in a cell. In-vitro transcription is still transcription. However, 
+typically it will be chromosomal DNA and will be in a cell.
+
+> We need a wider account of all these things, which I think will
+
+> require some basic treatment of 'information' within the BFO
+
+> framework. But I don't think we need them for a definition of gene.
+[out of order]
+
+
+> Think that our account of DNA, genes and so must have some account of
+
+> the sequential-information-bearing roles of these entities, which
+
+> requires some BFO treatment of information
+
+Yeah. Information, and models of information seems to be something we keep 
+comming back to. It is so natural a way to think about genetic stuff, that 
+it's even spawned the 'evolution breaks the laws of thermodynamics' meme :) I 
+guess this would need an account of encoding and decoding of information from 
+stoorage, and possibly of communication. However, something for another time 
+and place.
+
+Certainly, the role fillers for transcribed region and transcript are 
+associated by an informational relationship, and transcription errors are 
+typified by erros in communication through the transcription process, 
+resulting in non-perfect transmission of information from the transcribed 
+region to the transcript.
+
+> Note we don't name instances of genes (if we are going with the gene
+
+> as region of DNA definition); there's some 10^17 (?) contained in the
+
+> volume of my body right now. Our names, such as "p53" denote gene
+
+> types, or perhaps the information pattern generically dependent on
+
+> the various DNA-region instances (sometimes we name the gene patterns
+
+> by 'abnormal' phenotype eg hedgehog, sometimes by 'normal' phenotype
+
+> eg VEGF, though all these entities existed prior to our naming them,
+
+> so BFO doesn't need to worry about these)
+Largely agree with you here. There are a very large number of potential 
+regions of a very large number of physical DNA molecules in our bodies, and 
+some of these regions have associated with them names like p53. Also, there's 
+clearly an issue about instances, representative instances, types of 
+instances, and so on that we tend to gloss over, which need sorting out at 
+some stage.
+
+However, I don't think that all of these regions are equally valid candidates 
+for naming - this smaller collection of things that are potentially sensible 
+to associate with names can probably be given usefull upper and a lower 
+bounds (even if not the least upper and greatest lower) quite easily. For 
+example, a region that never interacts with any molecule with an appreciable 
+degree of specificity can't have different versions that give rise to a 
+variety of phenotypes, so would be a bad candidate for associating with a 
+gene name - possibly so bad that we would ensure that we made this case 
+disjoint from any concept that identified things that can have gene names 
+associated with them.
+
+
+> > Each significantly overlapping set of transcripts within a genome
+
+> > is a gene.
+
+>
+
+> Do you mean set as in abstract set, or as in an actual collection /
+
+> mereological sum?
+
+Fluffy language will always get me into trouble :)
+
+>
+
+> Transcripts are RNA molecules floating in the cell, so it doesn't
+
+> seem to make sense to call this bundle or this abstract set a gene.
+
+Agreed.
+
+> "transcripts within a genome" doesn't make sense with my definitions
+
+> of transcript, which is essentially synonymous with RNA molecule.
+My bad - using transcript as a metonym for transcribed region. See how those 
+biological habits die hard.
+
+> If you mean transcript as a shorthand for transcript-encoding-region-
+
+> on-genome, then I am happy with defining a gene as a maximally
+
+> overlapping genomic region spanning these transcript-encoding-regions
+
+> (now you and I both know the "overlapping" part needs a bit of work
+
+> to account for dicistronic genes, genes-within-introns and so on, but
+
+> I don't think this is hard).
+
+Yeah - the devil is in the details - you sometimes get things that 
+are 'clearly' different genes, but they share a single exon, or very 
+occasionally have interlieved splicing. Trust biology not to follow the 
+rules :)
+
+> I don't really care whether we call 
+
+> instances of these regions 'genes', although I do think biologists
+
+> would be happy with this.
+
+I don't particularly care if the biologists call these things genes. However, 
+I would be uneasy with them being called genes in the knowledge artefact we 
+produce, particularly as other deffintions e.g. the classical genetics 
+deffintion are possibly logically disjoint concepts such as unit of 
+heredity - consider heritable patterns of methylation, or other funkey 
+epigenetic mechanisms. It would be much safer to tag this with a 'this is one 
+of the things biologists may realy mean when they say gene' assertion. Hence 
+my comment about seperating the concepts from the lexicon.
+
+> > 'Good examples' of genes are the bundle of: a single contiguous
+
+> > region of DNA
+
+> > that produces a single transcript that encodes for a single protein
+
+> > that has
+
+> > a single whole-organism phenotype associated with each allele. Each
+
+> > allele is
+
+> > associated with a single version of the DNA sequence of that region.
+
+> > Selection pressures act upon alleles of this gene with little
+
+> > correlation
+
+> > with how other genes are selected. We use 'gene' to stand for most
+
+> > of these
+
+> > parts, like we use hammer to stand for the physical tool, and for
+
+> > the action
+
+> > of hitting something, and figuratively in phrases like "in my
+
+> > speach, I realy
+
+> > wanted to hammer it home".
+
+>
+
+> Let's not get distracted by the erroneous way people use language.
+
+Not sure they are using it eroneously. They are using it in a way we all 
+manage to understand, and within the rules of normal English. This is clearly 
+how the biologists use 'gene' in practice, so any formalisation of what they 
+mean when they say 'gene' should acknowlege this in some way. It just happens 
+to also be a pig to formalise these kind of concept-plexes (real word??) in 
+well-studdied fragments of predicate logic.
+
+> And I'm not sure why single-whole organism phenoypes are important at
+
+> this stage
+
+Well, classical genetics always defines genes in terms of visible phenotype, 
+which usually assumes you can look at (or measure) something about the 
+resulting organism.
+
+Matthew
+
+ 
+
+
+
+Chris Mungall 	Post reply
+
+2/21/07
+Re: [bfo-discuss] Re: Genes?
+
+- show quoted text -
+- show quoted text -
+"identified with" is a bit wishy-washy
+
+> transcript is an output role of transcription. Fillers of this role  
+
+> must be
+
+> RNA molecules.
+
+>
+
+> I don't know where you sit with roles, and other ways of modelling  
+
+> activeties,
+
+> but you get the idea. Thinking about it, I'm not even sure that the  
+
+> DNA
+
+> refered to above /has/ to be a chromosome, or that the process / 
+
+> has/ to take
+
+> place in a cell. In-vitro transcription is still transcription.  
+
+> However,
+
+> typically it will be chromosomal DNA and will be in a cell.
+
+I'm happy with saying the DNA molecule plays the role of template and  
+and the RNA molecule the role of transcript in the process of  
+transcription.
+
+You're right transcribed region is ambiguous - I would instead use  
+BFO function or disposition in the definition here. Of course, all  
+DNA has a certain disposition to be transcribed (given the  
+appropriate cellular or in-vitro context), but some regions are more  
+disposed than others.
+
+>
+
+>> We need a wider account of all these things, which I think will
+
+>> require some basic treatment of 'information' within the BFO
+
+>> framework. But I don't think we need them for a definition of gene.
+
+>
+
+> [out of order]
+
+>> Think that our account of DNA, genes and so must have some account of
+
+>> the sequential-information-bearing roles of these entities, which
+
+>> requires some BFO treatment of information
+
+>
+
+> Yeah. Information, and models of information seems to be something  
+
+> we keep
+
+> comming back to. It is so natural a way to think about genetic  
+
+> stuff, that
+
+> it's even spawned the 'evolution breaks the laws of thermodynamics'  
+
+> meme :) I
+
+> guess this would need an account of encoding and decoding of  
+
+> information from
+
+> stoorage, and possibly of communication. However, something for  
+
+> another time
+
+> and place.
+
+I believe you OBI folks may drive this (albeit for human-created  
+information entities and information entity bearers, such as  
+protocols and protocol documents)
+
+- show quoted text -
+yes, that's what I was getting at. You won't find any one region  
+"called" (in the sense of having a unique name) p53, rather p53 is  
+the name given to the type or dependent continuant
+
+(my ad-hoc figure was a no of chromosomes * no of genes per  
+chromosome calculation)
+
+- show quoted text -
+yup
+
+- show quoted text -
+ok, gotcha
+
+- show quoted text -
+alright i retract my comment.. I guess I meant inconsistently
+
+OK, I take your point - we should not claim to have formalised 'gene'  
+when we have only formalised one sense of the term. I don't think  
+formalising the different senses will be so hard...
+
+
+>> And I'm not sure why single-whole organism phenoypes are important at
+
+>> this stage
+
+>
+
+> Well, classical genetics always defines genes in terms of visible  
+
+> phenotype,
+
+> which usually assumes you can look at (or measure) something about the
+
+> resulting organism.
+
+are there non-measurable phenotypes?
+
+> Matthew
+
+>
+> >
+>
+
+ 
+
+
+
+Suzi 	Post reply
+
+2/21/07
+
+You might be interested in looking at the sequence ontology, which is becoming a standard in the genomics community:
+
+http://sequenceontology.org
+
+The definition of gene there incorporates many of the subtleties that must be considered biologically. 
+"
+SO:0000704
+Definition: A locatable region of genomic sequence, corresponding to a unit of inheritance, which is associated with regulatory regions, transcribed regions and/or other functional sequence regions.
+
+
+On 2/20/07, Michel Dumontier <michel.d...@gmail.com > wrote:
+- show quoted text -
+
+ 
+
+
+
+Matthew Pocock 	Post reply
+
+2/22/07
+Re: [bfo-discuss] Re: Genes?
+
+On Wednesday 21 February 2007 21:37, Chris Mungall wrote:
+
+> > Well, classical genetics always defines genes in terms of visible
+
+> > phenotype,
+
+> > which usually assumes you can look at (or measure) something about the
+
+> > resulting organism.
+
+>
+
+> are there non-measurable phenotypes?
+
+>
+
+> > Matthew
+
+Good question. I strongly susspect that to have a phenotype, it must be 
+possible to observe it in the organism. Sometimes markers are used instead of 
+phenotypes for genetic experiments (PCRs with primers over SNPs, differently 
+lengthed satelites, ...) but I've never heard these called phenotypes, while 
+they probably do fall within something very slightly broader than 'unit of 
+heredity'. Certainly for things like building linkage maps, they can be used 
+interchaingably with phenotypes associated with well-behaved loci. But a 
+geneticist uses the phenotypes associated with different alleles of a given 
+gene to reason about the function of that gene.
+
+Is there a back-cross wearied drosophila genetecist lurking on this list that 
+can give a view on this?
+
+Matthew
+
+ 
+
+
+
+zuotian 	Post reply
+
+11:43 AM (3 hours ago)
+
+Hello,
+ 
+My research focuses on describing/modeling genomic annotations in various databases, and I ran into the question of how to model gene (both universal and particular) within BFO. I just found this discussion. Even though it is quite old now, can someone comment on the latest development on this question? Do we have a working model for gene in BFO? (I cannot find the answer through search, as there are too much noise generated by “Gene Ontology”.)
+ 
+I found the definition in SO is hard to work with, due to the issues mentioned in The ontology of biological sequences by Hoehndorf et al. The current SO definition does not clearly define whether a gene a molecular sequence (material entity) or an abstract sequence (information entity), thus creating a barrier to use it inside of annotations.
+ 
+I think this idea of modeling gene and transcript as roles are previously mentioned in the discussion, but not fully discussed. Here is my current work-in-progress definition of a gene.
+ 
+A gene is a role (specifically dependent continuant).
+
+-            A gene role is realized by an instance of a molecular sequence (material entity, indenpendent continuant) participate in the protein production/regulation and/or phenotype expression process as a template (I am not a biologist, and cannot come up with a good definition of this process). For example, A DMD (Duchenne muscular dystrophy) gene is a gene role where the bearer produce DMD protein through a biological process.
+
+-            With or without the gene role, the existential property of the molecular sequence does not change.
+
+-            A molecular sequence is represented by an abstract sequence, and there are more than one abstract sequences that represent molecular sequences with the role of DMD gene. (I found this aspect to be particular helpful when describing annotation data, because it enables me to talk about DMD gene with different abstract sequences (one defined by the a region on chromosome X in hg19) and one found in a DMD patient with mutations.)
+ 
+The same role modeling can apply to transcripts, various binding sites, and most of the gene parts defined in SO. One issue arise from this model is that a gene role does not have proper parts. However, the bearer of the role can have proper parts. For example, an exon is no longer part of a gene, but the molecular instance that realizes an exon role is part of the molecular instance that realized the gene role.
+ 
+ 
+Any feedback is appreciated.
+ 
+Thanks,
+Zuotian
+
+- show quoted text -
+
+
