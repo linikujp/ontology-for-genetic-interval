@@ -1,9 +1,10 @@
-#summary One-sentence summary of this page.
 #labels gene,BFO
+#what is gene under BFO's frame.
 
 = 'Gene' is discussed in BFO-discussion group =
 
-[https://groups.google.com/forum/?fromgroups=#!topic/bfo-discuss/8vXDW4UJyOk BFO-discussion page]
+Copy from [https://groups.google.com/forum/?fromgroups=#!topic/bfo-discuss/8vXDW4UJyOk BFO-discussion page]
+
 	Michel Dumontier 	Post reply
 
 2/20/07
