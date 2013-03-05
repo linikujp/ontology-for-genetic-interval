@@ -3,13 +3,13 @@
 
 = 'Gene' is discussed in BFO-discussion group =
 
+[https://groups.google.com/forum/?fromgroups=#!topic/bfo-discuss/8vXDW4UJyOk BFO-discussion page]
 	Michel Dumontier 	Post reply
 
 2/20/07
 
 Hi,
- I have a question about the relationship between continuant entities
-that have functional parts. For instance, chromosomes are complexes
+ I have a question about the relationship between continuant entities that have functional parts. For instance, chromosomes are complexes
 comprised of DNA (among other things) which play an important role in
 the transfer of genetic information. They do so, in part, by having
 special regions called genes. Such regions are not physically distinct
@@ -40,9 +40,7 @@ On 2/20/07, Michel Dumontier <michel.d...@gmail.com> wrote:
 >
 > Hi,
 >  I have a question about the relationship between continuant entities
-
 > that have functional parts. For instance, chromosomes are complexes
-
 > comprised of DNA (among other things) which play an important role in
 
 > the transfer of genetic information. They do so, in part, by having
