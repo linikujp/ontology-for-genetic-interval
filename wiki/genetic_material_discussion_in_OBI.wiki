@@ -1,4 +1,4 @@
-#labels gene,OBI
+#labels Featured
 #Matt's proposal for genetic material
 
 = Genetic material discussion in OBI group =
