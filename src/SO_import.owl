@@ -59,6 +59,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/so_variant_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/so_variant_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variant_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -82,6 +90,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGI_0000002 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000002"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SO_0000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000001">
@@ -91,6 +105,20 @@
         <obo:IAO_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0000001</obo:IAO_id>
         <obo:IAO_subset rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOFA</obo:IAO_subset>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001023">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allele</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000002"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An allele is one of a set of coexisting sequence variants of a gene.</obo:IAO_0000115>
+        <obo:IAO_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0001023</obo:IAO_id>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allelomorph</obo:IAO_0000118>
+        <obo:IAO_xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Allele</obo:IAO_xref>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
     </owl:Class>
     
