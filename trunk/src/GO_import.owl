@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ogi/GO_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ogi/GO_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:go="http://purl.obolibrary.org/obo/go#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogi/GO_import.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">in_subset</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_exact_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_related_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_alternative_id</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_obo_namespace</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#gosubset_prok"/>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_narrow_synonym</rdfs:label>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005575">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005575</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0008372</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao1337158144</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Note that, in addition to forming the root of the cellular component ontology, this term is recommended for use for the annotation of gene products whose cellular component is unknown. Note that when this term is used for annotation, it indicates that no information was available about the cellular component of the gene product annotated as of the date the annotation was made; the evidence code ND, no data, is used to indicate this.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The part of a cell or its extracellular environment in which a gene product is located. A gene product may be located in one or more parts of a cell and its location may be as specific as a particular macromolecular complex, that is, a stable, persistent association of macromolecules that function together.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular component</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular component unknown</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gosubset_prok"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005634 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005634">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A membrane-bounded organelle of eukaryotic cells in which chromosomes are housed and replicated. In most cells, the nucleus contains all of the cell&#39;s chromosomes except the organellar chromosomes, and is the site of RNA synthesis and processing. In some species, or in specialized cell types, RNA metabolism or DNA replication may be absent.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005634</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao1702920020</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Cell_nucleus</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cell nucleus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005694 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005694">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromosome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A structure composed of a very long molecule of DNA and associated proteins (e.g. histones) that carries hereditary information.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005694</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Chromosome</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">chromatid</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">interphase chromosome</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">prophase chromosome</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gosubset_prok"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0005739 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0005739">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mitochondrion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0043226"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A semiautonomous, self replicating organelle that occurs in varying numbers, shapes, and sizes in the cytoplasm of virtually all eukaryotic cells. It is notably the site of tissue respiration.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0005739</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao1860313010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Mitochondrion</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mitochondria</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_aspergillus"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_candida"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_metagenomics"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_yeast"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0043226 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/GO_0043226">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">organelle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0005575"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GO:0043226</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NIF_Subcellular:sao1539965131</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Organized structure of distinctive morphology and function. Includes the nucleus, mitochondria, plastids, vacuoles, vesicles, ribosomes and the cytoskeleton, and prokaryotic structures such as anammoxosomes and pirellulosomes. Excludes the plasma membrane.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia:Organelle</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cellular_component</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/go.owl"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/go#gosubset_prok"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+

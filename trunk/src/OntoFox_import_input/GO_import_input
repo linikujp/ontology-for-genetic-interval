@@ -1,0 +1,37 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ogi/GO_import.owl
+
+[Source ontology]
+GO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/GO_0005694 #chromosome
+http://purl.obolibrary.org/obo/GO_0043226 #organelle
+http://purl.obolibrary.org/obo/GO_0005739 #mitochondrion
+http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+http://purl.obolibrary.org/obo/GO_0005634 #nucleus
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040
+
+http://purl.obolibrary.org/obo/GO_0043226 #organelle
+subClassOf http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
+
+http://purl.obolibrary.org/obo/GO_0005694 #chromosome
+subClassOf http://purl.obolibrary.org/obo/GO_0043226 #organelle
+
+http://purl.obolibrary.org/obo/GO_0005739 #mitochondrion
+subClassOf http://purl.obolibrary.org/obo/GO_0043226 #organelle
+
+http://purl.obolibrary.org/obo/GO_0005634 #nucleus
+subClassOf http://purl.obolibrary.org/obo/GO_0043226 #organelle
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+includeAllAxioms
+
+[Source annotation URIs to be excluded]
