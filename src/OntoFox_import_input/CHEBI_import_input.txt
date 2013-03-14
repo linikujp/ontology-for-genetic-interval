@@ -6,9 +6,13 @@ CHEBI
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/CHEBI_33708 #amino-acid residue
+http://purl.obolibrary.org/obo/CHEBI_50319 #nucleotide residue
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/CHEBI_33708 #amino-acid residue
+subClassOf http://purl.obolibrary.org/obo/OGI.owl#Interval_Base_Residue
+
+http://purl.obolibrary.org/obo/CHEBI_50319 #nucleotide residue
 subClassOf http://purl.obolibrary.org/obo/OGI.owl#Interval_Base_Residue
 
 [Source term retrieval setting]

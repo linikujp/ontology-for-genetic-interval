@@ -6,10 +6,14 @@ SO
 
 [Low level source term URIs]
 http://purl.obolibrary.org/obo/SO_0000001 #region
+http://purl.obolibrary.org/obo/SO_0001026 #genome
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/SO_0000001 #region
 subClassOf http://purl.obolibrary.org/obo/BFO_0000031
+
+http://purl.obolibrary.org/obo/SO_0001026 #genome
+subClassOf http://purl.obolibrary.org/obo/BFO_0000027
 
 [Source term retrieval setting]
 includeNoIntermediates
