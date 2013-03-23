@@ -10,6 +10,11 @@ http://purl.obolibrary.org/obo/GO_0043226 #organelle
 http://purl.obolibrary.org/obo/GO_0005739 #mitochondrion
 http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
 http://purl.obolibrary.org/obo/GO_0005634 #nucleus
+http://purl.obolibrary.org/obo/GO_0006260 #DNA replication
+http://purl.obolibrary.org/obo/GO_0010467 #gene expression
+http://purl.obolibrary.org/obo/GO_0006412 #translation
+http://purl.obolibrary.org/obo/GO_0006351 #transcription,DNA dependent
+http://purl.obolibrary.org/obo/GO_0008150 #biological_process
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/GO_0005575 #cellular_component
@@ -26,6 +31,22 @@ subClassOf http://purl.obolibrary.org/obo/GO_0043226 #organelle
 
 http://purl.obolibrary.org/obo/GO_0005634 #nucleus
 subClassOf http://purl.obolibrary.org/obo/GO_0043226 #organelle
+
+http://purl.obolibrary.org/obo/GO_0006260 #DNA replication
+subClassOf http://purl.obolibrary.org/obo/GO_0008150
+
+http://purl.obolibrary.org/obo/GO_0010467 #gene expression
+subClassOf http://purl.obolibrary.org/obo/GO_0008150
+
+http://purl.obolibrary.org/obo/GO_0006412 #translation
+subClassOf http://purl.obolibrary.org/obo/GO_0008150
+
+http://purl.obolibrary.org/obo/GO_0006351 #transcription,DNA dependent
+subClassOf http://purl.obolibrary.org/obo/GO_0008150
+
+http://purl.obolibrary.org/obo/GO_0008150 #biological_process
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
+
 
 
 [Source term retrieval setting]

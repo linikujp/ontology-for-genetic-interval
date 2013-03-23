@@ -8,9 +8,25 @@ OBI
 http://purl.obolibrary.org/obo/OBI_0001404 #genetic characteristics information
 includeAllChildren
 
+http://purl.obolibrary.org/obo/OBI_0000811 #primary structure of DNA macromolecule
+
+http://purl.obolibrary.org/obo/OBI_0000845 #primary structure of RNA molecule
+
+http://purl.obolibrary.org/obo/OBI_0000885 #secondary structure of sequence macromolecule
+includeAllChildren
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/OBI_0001404 #genetic characteristics information
 subClassOf http://purl.obolibrary.org/obo/IAO_0000027
+
+http://purl.obolibrary.org/obo/OBI_0000811 #primary structure of DNA macromolecule
+subClassOf http://purl.obolibrary.org/obo/OGI_0000013
+
+http://purl.obolibrary.org/obo/OBI_0000845 #primary structure of RNA molecule
+subClassOf http://purl.obolibrary.org/obo/OGI_0000013
+
+http://purl.obolibrary.org/obo/OBI_0000885 #secondary structure of sequence macromolecule
+subClassOf http://purl.obolibrary.org/obo/OGI_0000011
 
 [Source term retrieval setting]
 includeNoIntermediates

@@ -9,10 +9,14 @@ http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
 
 http://purl.obolibrary.org/obo/IAO_0000027 #data item
 
+http://purl.obolibrary.org/obo/IAO_0000442 #author role
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
 subClassOf http://purl.obolibrary.org/obo/BFO_0000031
 
+http://purl.obolibrary.org/obo/IAO_0000442 #author role
+subClassOf http://purl.obolibrary.org/obo/BFO_0000023
 
 [Source term retrieval setting]
 includeNoIntermediates
