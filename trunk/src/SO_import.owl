@@ -59,6 +59,15 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/so_member_of -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/so_member_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">member_of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/so_variant_of -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/so_variant_of">
@@ -110,11 +119,32 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SO_0000704 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000704">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gene</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001411"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.</obo:IAO_0000115>
+        <obo:IAO_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0000704</obo:IAO_id>
+        <obo:IAO_subset rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOFA</obo:IAO_subset>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This term is mapped to MGED. Do not obsolete without consulting MGED ontology. A gene may be considered as a unit of inheritance.</rdfs:comment>
+        <obo:IAO_xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Gene</obo:IAO_xref>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SO_0001023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001023">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allele</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/so_variant_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An allele is one of a set of coexisting sequence variants of a gene.</obo:IAO_0000115>
         <obo:IAO_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0001023</obo:IAO_id>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allelomorph</obo:IAO_0000118>
@@ -132,6 +162,20 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A genome is the sum of genetic material within a cell or virion.</obo:IAO_0000115>
         <obo:IAO_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0001026</obo:IAO_id>
         <obo:IAO_xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Genome</obo:IAO_xref>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001411 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001411">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_region</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A region defined by its disposition to be involved in a biological process.</obo:IAO_0000115>
+        <obo:IAO_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0001411</obo:IAO_id>
+        <obo:IAO_subset rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOFA</obo:IAO_subset>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological region</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
     </owl:Class>
 </rdf:RDF>

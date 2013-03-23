@@ -164,6 +164,66 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000811 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000811">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary structure of DNA macromolecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000013"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BP et al</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">a quality of a DNA molecule that inheres in its bearer due to the order of its DNA nucleotide residues.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">placeholder for SO</obo:IAO_0000116>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary structure of DNA macromolecule</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000845 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000845">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary structure of RNA molecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000013"/>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The primary structure of an RNA molecule that is completely defined by the set of its nucleic residue parts and the linear order induced by the peptide bonds that hold them together</obo:IAO_0000115>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">primary structure of RNA molecule</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000885 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000885">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary structure of sequence macromolecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000011"/>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-01-31: Philippe Rocca-Serra: This is a placeholder to allow work on &#39;nucleic acid mapping assay&#39; in collaboration with RNAOntology group. Need to liaise with SO</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wikipedia</obo:IAO_0000119>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary structure of sequence macromolecule</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000002"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000896 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000896">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary structure of RNA molecule</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000885"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-01-31: Philippe Rocca-Serra: This is a placeholder to allow work on &#39;nucleic acid mapping assay&#39; in collaboration with RNAOntology group. Need to liaise with SO</obo:IAO_0000116>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 15630685: Single molecule studies of RNA secondary structure: AFM of TYMV viral RNA.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">secondary structure of RNA molecule</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001225 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001225">
@@ -299,6 +359,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000013"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -307,6 +379,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000002 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000002">
+        <rdfs:label xml:lang="en">example to be eventually removed</rdfs:label>
+    </owl:NamedIndividual>
     
 
 
@@ -322,6 +402,14 @@
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000122">
         <rdfs:label xml:lang="en">ready for release</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000123 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/IAO_0000123">
+        <rdfs:label xml:lang="en">metadata incomplete</rdfs:label>
     </owl:NamedIndividual>
 </rdf:RDF>
 

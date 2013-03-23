@@ -8,6 +8,9 @@ SO
 http://purl.obolibrary.org/obo/SO_0000001 #region
 http://purl.obolibrary.org/obo/SO_0001026 #genome
 http://purl.obolibrary.org/obo/SO_0001023 #allele
+http://purl.obolibrary.org/obo/SO_0001411 #biological region
+http://purl.obolibrary.org/obo/SO_0000704 #gene
+
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/SO_0000001 #region
@@ -18,7 +21,6 @@ subClassOf http://purl.obolibrary.org/obo/BFO_0000027
 
 http://purl.obolibrary.org/obo/SO_0001023 #allele
 subClassOf http://purl.obolibrary.org/obo/OGI_0000002
-
 
 [Source term retrieval setting]
 includeNoIntermediates
