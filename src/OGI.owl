@@ -29,9 +29,9 @@ The definition of &apos;genetic interval&apos; is &quot;the spatial continuous p
 
 Related paper:
 
-1. Yu Lin, Norihiro Sakamoto (2009) ìGenome, Gene, Interval and Ontologyî Interdisciplinary Ontology Vol.2 - Proceedings of the Second Interdisciplinary Meeting, Tokyo, Feb. 28th- Mar. 1st, 2009. Page(s):25-34 (http://cdb-riken.academia.edu/LinYu/Papers/142399/Genome_Gene_Interval_and_Ontology)
-Yu Lin, Hiroshi Tarui, Peter Simons (2009) ìFrom Ontology for Genetic Interval(OGI) to Sequence Assembly ñ Ontology apply to next generation sequencingî Proceeding of the Semantic Web Applications and Tools for Life Science Workshop, Amsterdam, Nov.20th, 2009. (http://ceur-ws.org/Vol-559/Poster2.pdf)
-Yu Lin, Peter Simons (2010) ìDNA sequence from below: A Nominalist Approachî Interdisciplinary Ontology Vol.3 - Proceedings of the Second Interdisciplinary Meeting, Tokyo, Feb. 28th- Mar. 1st, 2010. (http://philpapers.org/rec/LINDSF)
+1. Yu Lin, Norihiro Sakamoto (2009) ‚ÄúGenome, Gene, Interval and Ontology‚Äù Interdisciplinary Ontology Vol.2 - Proceedings of the Second Interdisciplinary Meeting, Tokyo, Feb. 28th- Mar. 1st, 2009. Page(s):25-34 (http://cdb-riken.academia.edu/LinYu/Papers/142399/Genome_Gene_Interval_and_Ontology)
+Yu Lin, Hiroshi Tarui, Peter Simons (2009) ‚ÄúFrom Ontology for Genetic Interval(OGI) to Sequence Assembly ‚Äì Ontology apply to next generation sequencing‚Äù Proceeding of the Semantic Web Applications and Tools for Life Science Workshop, Amsterdam, Nov.20th, 2009. (http://ceur-ws.org/Vol-559/Poster2.pdf)
+Yu Lin, Peter Simons (2010) ‚ÄúDNA sequence from below: A Nominalist Approach‚Äù Interdisciplinary Ontology Vol.3 - Proceedings of the Second Interdisciplinary Meeting, Tokyo, Feb. 28th- Mar. 1st, 2010. (http://philpapers.org/rec/LINDSF)
 
 
 </dc:description>
@@ -707,7 +707,7 @@ Yu Lin, Peter Simons (2010) ìDNA sequence from below: A Nominalist Approachî Int
         <owl:disjointWith rdf:resource="&obo;OGI_0000009"/>
         <owl:disjointWith rdf:resource="&obo;OGI_0000010"/>
         <obo:IAO_0000600 xml:lang="en">It is genomic, so that protein is not the child of this class. it is continuous, so that neither genome(colletive of chormosomes), nor genotype diploid(collective alleles comes from different chromosomes), nor gene family(collective of genes of same homolog located to different chromosomes) are genomic interval. Whereas gene cluster which are juxtapositioned genes can be subclass of genomic interval. By length, the longest Genomic Interval is the interval with same start point and end point with chromosome, and smallest is when one start point and end point are equal( one residue of DNA or RNA). Interval holds property interval relation.</obo:IAO_0000600>
-        <obo:IAO_0000119 xml:lang="en">Yu Lin, Norihiro Sakamoto (2009) ìGenome, Gene, Interval and Ontologyî Interdisciplinary Ontology Vol.2 - Proceedings of the Second Interdisciplinary Meeting, Tokyo, Feb. 28th- Mar. 1st, 2009. Page(s):25-34 (http://cdb-riken.academia.edu/LinYu/Papers/142399/Genome_Gene_Interval_and_Ontology)</obo:IAO_0000119>
+        <obo:IAO_0000119 xml:lang="en">Yu Lin, Norihiro Sakamoto (2009) ‚ÄúGenome, Gene, Interval and Ontology‚Äù Interdisciplinary Ontology Vol.2 - Proceedings of the Second Interdisciplinary Meeting, Tokyo, Feb. 28th- Mar. 1st, 2009. Page(s):25-34 (http://cdb-riken.academia.edu/LinYu/Papers/142399/Genome_Gene_Interval_and_Ontology)</obo:IAO_0000119>
         <obo:IAO_0000118 xml:lang="en">genetic material interval</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">genomic material interval</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">the spatial continuous physical entity which contains ordered genomic sets(DNA, RNA, Allele, Marker,etc.) between and including two points(Nucleic_Acid_Base_Residue) on a chromosome or RNA molecule which must have a liner primary sequence sturcture. </obo:IAO_0000115>
@@ -2281,7 +2281,7 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
     <owl:Class rdf:about="&obo;OGI.owl#Promoter">
         <rdfs:label xml:lang="en">promoter</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGI_0000042"/>
-        <dc:description xml:lang="en">In genetics, a promoter is a region of DNA that initiates transcription of a particular gene. Promoters are located near the genes they transcribe, on the same strand and upstream on the DNA (towards the 3&apos; region of the anti-sense strand, also called template strand and non-coding strand). Promoters can be about 100ñ1000 base pairs long. (http://en.wikipedia.org/wiki/Promoter_(genetics))</dc:description>
+        <dc:description xml:lang="en">In genetics, a promoter is a region of DNA that initiates transcription of a particular gene. Promoters are located near the genes they transcribe, on the same strand and upstream on the DNA (towards the 3&apos; region of the anti-sense strand, also called template strand and non-coding strand). Promoters can be about 100‚Äì1000 base pairs long. (http://en.wikipedia.org/wiki/Promoter_(genetics))</dc:description>
         <obo:IAO_0000115>a combination of short sequence elements, normally just upstream of a gene, to which RNA polymerase binds in order to initiate transcription of the gene.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="&obo;OGI.owl#Human_Molecular_Genetics3"/>
     </owl:Class>
