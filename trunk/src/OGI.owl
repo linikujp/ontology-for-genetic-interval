@@ -8,6 +8,7 @@
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
 
 
@@ -18,13 +19,13 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;OGI.owl">
         <owl:versionInfo>2.0</owl:versionInfo>
-        <dc:creator>Yu Lin (YL)</dc:creator>
-        <dc:description xml:lang="en">OGI formalized the genomic element by defining an upper class &apos;genetic interval&apos;.
+        <dc:description xml:lang="en">OGI formalized the genomic element by defining an upper class &#39;genetic interval&#39;.
 
-The definition of &apos;genetic interval&apos; is &quot;the spatial continuous physical entity which contains ordered genomic sets(DNA, RNA, Allele, Marker,etc.) between and including two points (Nucleic Acid Base Residue) on a chromosome or RNA molecule which must have a liner primary sequence sturcture.&quot; 
+The definition of &#39;genetic interval&#39; is &quot;the spatial continuous physical entity which contains ordered genomic sets(DNA, RNA, Allele, Marker,etc.) between and including two points (Nucleic Acid Base Residue) on a chromosome or RNA molecule which must have a liner primary sequence sturcture.&quot; 
 
 Related paper:
 
@@ -588,7 +589,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
     <!-- http://purl.obolibrary.org/obo/OGI.owl#isWrittenBy -->
 
     <owl:ObjectProperty rdf:about="&obo;OGI.owl#isWrittenBy">
-        <rdfs:comment xml:lang="en">is short relation for author  &apos;participate in&apos; some (&apos;writing book process&apos; and ( &apos;has  specific output of&apos; some book))</rdfs:comment>
+        <rdfs:comment xml:lang="en">is short relation for author  &#39;participate in&#39; some (&#39;writing book process&#39; and ( &#39;has  specific output of&#39; some book))</rdfs:comment>
         <rdfs:range rdf:resource="&obo;OGI.owl#Author"/>
         <rdfs:domain rdf:resource="&obo;OGI.owl#Book"/>
     </owl:ObjectProperty>
@@ -662,12 +663,6 @@ If genetic interval X is located before genetic interval Y, then the end of X is
     <rdf:Description rdf:about="&obo;GO_0005694">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#isStructurePartOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000084"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasStructurePart"/>
                 <owl:allValuesFrom>
                     <owl:Class>
@@ -677,6 +672,12 @@ If genetic interval X is located before genetic interval Y, then the end of X is
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#isStructurePartOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000084"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -699,8 +700,14 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasStartPoint"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasEndPoint"/>
                 <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimarySequence"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_0000014"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -711,8 +718,8 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasEndPoint"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -724,19 +731,13 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasStartPoint"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasStartPoint"/>
                 <owl:allValuesFrom rdf:resource="&obo;OGI_1000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimarySequence"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_0000014"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>the spatial continuous physical entity which contains ordered biological sets (DNA segments, Genetic Markers, Nucleic Acid Base Residues, RNA segments, Protein segments) between two boundaries: start boundary and end boundary on a chromosome, RNA or protein.</obo:IAO_0000115>
@@ -782,13 +783,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
 
     <owl:Class rdf:about="&obo;OGI_0000004">
         <rdfs:label xml:lang="en">gene</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGI_0000002"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#isComponentPartOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000084"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&oboInOwl;ObsoleteClass"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#isTranscribedTo"/>
@@ -816,6 +811,12 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#isComponentPartOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000072"/>
             </owl:Restriction>
@@ -828,7 +829,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string">in RNA virus, there will be RNA interval codes for protein.</rdfs:comment>
         <obo:IAO_0000119 xml:lang="en">Miko, I. &amp; LeJeune, L., eds. Essentials of Genetics. Cambridge, MA: NPG Education, 2009</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">a genetic interval that correspond to one or more DNA sequences that carry the coding information required to produce a specific protein, and that protein in turn carries out a particular function within te cell.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a genertically dependent continuant that correspond to one or more DNA sequences that carry the coding information required to produce a specific protein, and that protein in turn carries out a particular function within te cell.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -861,14 +862,14 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasCytogeneticMapLocation"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000028"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryDNASequence"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryDNASequence"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_0000073"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasCytogeneticMapLocation"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -895,7 +896,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         </rdfs:subClassOf>
         <obo:IAO_0000600 xml:lang="en">The textual sequence refects the order of the nucleotide residue within a gene or a choromsome or any genetic interval. The chromosome includes not only the nucelotide residues interwined into DNA helix but also proteins such as Histone, so we make a distinction that the textual sequence of genetic interval only reflects the primary structure of a genetic interval.</obo:IAO_0000600>
         <obo:IAO_0000112 xml:lang="en">a sepcific gene sequence stored in a EntrezGene database</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">the textual sequencial sets of &apos;A,T,C,G&apos; or &apos;A,U,C,G&apos; represent the primary structure of a genetic interval.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">the textual sequencial sets of &#39;A,T,C,G&#39; or &#39;A,U,C,G&#39; represent the primary structure of a genetic interval.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1132,7 +1133,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">a genomic site that is occupied by alleles of polymorphism</obo:IAO_0000115>
-        <obo:IAO_0000232 xml:lang="en">this seems similar with SO&apos;s sequence feature.</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">this seems similar with SO&#39;s sequence feature.</obo:IAO_0000232>
     </owl:Class>
     
 
@@ -1217,14 +1218,14 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         <rdfs:subClassOf rdf:resource="&obo;OGI_0000008"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;so_variant_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000004"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasOccupiesLocus"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000023"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasOccupiesLocus"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000023"/>
+                <owl:onProperty rdf:resource="&obo;so_variant_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1369,7 +1370,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         <rdfs:label xml:lang="en">linkage disequilibrium block</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGI_0000006"/>
         <obo:IAO_0000118 xml:lang="en">LD block</obo:IAO_0000118>
-        <obo:IAO_0000232 xml:lang="en">need a definition. Also consider the place for &apos;linkage disequilibrium&apos;</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">need a definition. Also consider the place for &#39;linkage disequilibrium&#39;</obo:IAO_0000232>
     </owl:Class>
     
 
@@ -1385,7 +1386,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000232 xml:lang="en">definition and term &apos;linkage&apos;</obo:IAO_0000232>
+        <obo:IAO_0000232 xml:lang="en">definition and term &#39;linkage&#39;</obo:IAO_0000232>
     </owl:Class>
     
 
@@ -1442,6 +1443,12 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerRole"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasOccupiesSite"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -1455,20 +1462,14 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPolymorphismQuality"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000089"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerRole"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerProbe"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000065"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPolymorphismQuality"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000089"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A genetic marker is a gene or DNA sequence with a known location on a chromosome that can be used to identify individuals or species. It can be described as a variation (which may arise due to mutation or alteration in the genomic loci) that can be observed. A genetic marker may be a short DNA sequence, such as a sequence surrounding a single base-pair change (single nucleotide polymorphism, SNP), or a long one, like minisatellites.</obo:IAO_0000115>
@@ -1823,14 +1824,14 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         <rdfs:subClassOf rdf:resource="&obo;SO_0001026"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasComponentPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#mtDNA"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000082"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0005739"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000082"/>
-                <owl:someValuesFrom rdf:resource="&obo;GO_0005739"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasComponentPart"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#mtDNA"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">genome that is located in mitochondria.</obo:IAO_0000115>
@@ -2113,6 +2114,15 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SO_0000704 -->
+
+    <rdf:Description rdf:about="&obo;SO_0000704">
+        <rdfs:comment xml:lang="en">Definition from OGI&#39;s view: a gene corresponds to one or more DNA sequences that carry the coding information required to produce a specific protein, and that protein in turn carries out a particular function within te cell.
+Reference: Miko, I. &amp; LeJeune, L., eds. Essentials of Genetics. Cambridge, MA: NPG Education, 2009</rdfs:comment>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SO_0001023 -->
 
     <rdf:Description rdf:about="&obo;SO_0001023"/>
@@ -2317,6 +2327,12 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#Polymer"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#isStructurePartOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Protein"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimarySequence"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000025"/>
             </owl:Restriction>
@@ -2327,12 +2343,6 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
                 <owl:allValuesFrom rdf:resource="&obo;OGI_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#isStructurePartOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Protein"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2341,7 +2351,7 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
 
     <owl:Class rdf:about="&obo;OGI.owl#Polypeptide_Encoding_Gene">
         <rdfs:label xml:lang="en">polypeptide coding gene</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGI_0000004"/>
+        <rdfs:subClassOf rdf:resource="&obo;SO_0000704"/>
         <owl:disjointWith rdf:resource="&obo;OGI.owl#Pseudogene"/>
         <owl:disjointWith rdf:resource="&obo;OGI.owl#RNA_Gene"/>
     </owl:Class>
@@ -2362,7 +2372,7 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
     <owl:Class rdf:about="&obo;OGI.owl#Promoter">
         <rdfs:label xml:lang="en">promoter</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGI_0000042"/>
-        <dc:description xml:lang="en">In genetics, a promoter is a region of DNA that initiates transcription of a particular gene. Promoters are located near the genes they transcribe, on the same strand and upstream on the DNA (towards the 3&apos; region of the anti-sense strand, also called template strand and non-coding strand). Promoters can be about 100–1000 base pairs long. (http://en.wikipedia.org/wiki/Promoter_(genetics))</dc:description>
+        <dc:description xml:lang="en">In genetics, a promoter is a region of DNA that initiates transcription of a particular gene. Promoters are located near the genes they transcribe, on the same strand and upstream on the DNA (towards the 3&#39; region of the anti-sense strand, also called template strand and non-coding strand). Promoters can be about 100–1000 base pairs long. (http://en.wikipedia.org/wiki/Promoter_(genetics))</dc:description>
         <obo:IAO_0000115>a combination of short sequence elements, normally just upstream of a gene, to which RNA polymerase binds in order to initiate transcription of the gene.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="&obo;OGI.owl#Human_Molecular_Genetics3"/>
     </owl:Class>
@@ -2382,7 +2392,7 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
 
     <owl:Class rdf:about="&obo;OGI.owl#Pseudogene">
         <rdfs:label xml:lang="en">pseudogene</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGI_0000004"/>
+        <rdfs:subClassOf rdf:resource="&obo;SO_0000704"/>
         <owl:disjointWith rdf:resource="&obo;OGI.owl#RNA_Gene"/>
     </owl:Class>
     
@@ -2392,7 +2402,7 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
 
     <owl:Class rdf:about="&obo;OGI.owl#RNA_Gene">
         <rdfs:label xml:lang="en">RNA gene</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGI_0000004"/>
+        <rdfs:subClassOf rdf:resource="&obo;SO_0000704"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#isCodeFor"/>
@@ -2417,13 +2427,13 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000072"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_0000072"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2458,12 +2468,6 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#RNA_Molecule"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000072"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#isTranscribedBy"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000004"/>
             </owl:Restriction>
@@ -2472,6 +2476,12 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
                 <owl:allValuesFrom rdf:resource="&obo;OGI_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string">An RNA synthesized on a DNA or RNA template by an RNA polymerase.</rdfs:comment>
@@ -2548,6 +2558,14 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
     <owl:Class rdf:about="&obo;OGI.owl#tRNA">
         <rdfs:label rdf:datatype="&xsd;string">transfer RNA</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGI.owl#RNA_Molecule"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#ObsoleteClass -->
+
+    <owl:Class rdf:about="&oboInOwl;ObsoleteClass">
+        <rdfs:label>Obsolete Class</rdfs:label>
     </owl:Class>
     
 
@@ -2787,11 +2805,11 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
      -->
 
     <rdf:Description rdf:about="&obo;SO_0000001">
-        <rdfs:comment xml:lang="en">This term is asserted as Quality in OBI, and OBI uses OBI&apos;s preferrable label: &apos; primary structure of sequence macromolecule&apos;. In REO, this term is asserted as a &apos;generically dependent continuant&apos;. </rdfs:comment>
+        <rdfs:comment xml:lang="en">This term is asserted as Quality in OBI, and OBI uses OBI&#39;s preferrable label: &#39; primary structure of sequence macromolecule&#39;. In REO, this term is asserted as a &#39;generically dependent continuant&#39;. </rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.2.2.1782) http://owlapi.sourceforge.net -->
 
