@@ -40,6 +40,7 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <owl:imports rdf:resource="&obo;ogi/IAO_import.owl"/>
         <owl:imports rdf:resource="&obo;ogi/OBI_import.owl"/>
         <owl:imports rdf:resource="&obo;ogi/SO_import.owl"/>
+        <owl:imports rdf:resource="&obo;ogsf/RO_dev_import.owl"/>
     </owl:Ontology>
     
 
@@ -173,7 +174,9 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
 
     <!-- http://purl.obolibrary.org/obo/OGI.owl#hasIntervalRelation -->
 
-    <owl:ObjectProperty rdf:about="&obo;OGI.owl#hasIntervalRelation"/>
+    <owl:ObjectProperty rdf:about="&obo;OGI.owl#hasIntervalRelation">
+        <rdfs:comment xml:lang="en">This is OGI specific relation. We extended the allen caculus relation from temporal domain to material interval domain. Reference:  Yu Lin, Norihiro Sakamoto (2009) “Genome, Gene, Interval and Ontology” Interdisciplinary Ontology Vol.2 - Proceedings of the Second Interdisciplinary Meeting, Tokyo, Feb. 28th- Mar. 1st, 2009. Page(s):25-34 (http://cdb-riken.academia.edu/LinYu/Papers/142399/Genome_Gene_Interval_and_Ontology)</rdfs:comment>
+    </owl:ObjectProperty>
     
 
 
@@ -369,6 +372,15 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
     <!-- http://purl.obolibrary.org/obo/OGI.owl#isAdjacentAfter -->
 
     <owl:ObjectProperty rdf:about="&obo;OGI.owl#isAdjacentAfter">
+        <obo:IAO_0000115 xml:lang="en">isAdjacentAfter(X,Y) : genetic interval X is adjacent the end part of genetic interval 
+Y 
+If genetic interval X is adjacent to the end part of genetic interval Y, then the start 
+of X is after the start of Y and the end of X is after the end of Y, and the end of X is 
+the same as the start of Y.</obo:IAO_0000115>
+        <dc:description xml:lang="en">isAdjacentAfter(X,Y) ↔
+   (hasStartPoint(x1,X) &amp; hasStartPoint(y1,Y) &amp; isLocatedAfter(x1,y1)) 
+   &amp; (hasEndPoint(x2,X) &amp;  hasEndPoint(y2,Y) &amp; isLocatedAfter(x2,y2)) 
+   &amp; ((pointInterval(x2,X) == pointInterval(y1,X)) </dc:description>
         <rdfs:subPropertyOf rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
     </owl:ObjectProperty>
     
@@ -377,6 +389,16 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
     <!-- http://purl.obolibrary.org/obo/OGI.owl#isAdjacentBefore -->
 
     <owl:ObjectProperty rdf:about="&obo;OGI.owl#isAdjacentBefore">
+        <obo:IAO_0000115 xml:lang="en">isAdjacentBefore(X,Y) : genetic interval X is adjacent to the start of genetic interval Y
+
+If genetic interval X is adjacent to the start of genetic interval Y, then the start of X 
+is before the start of Y and the end of X is before the end of Y, and the end of X is 
+identical with the start of Y. 
+</obo:IAO_0000115>
+        <dc:description xml:lang="en">isAdjacentBefore(X,Y) ↔
+   (hasStartPoint(x1,X) &amp; hasStartPoint(y1,Y) &amp; isLocatedBefore(x1,y1)) 
+   &amp; (hasEndPoint(x2,X) &amp; hasEndPoint(y2,Y) &amp;  isLocatedBefore(x2,y2)) 
+   &amp; ((pointInterval(x2,X) == pointInterval(y1,X)) </dc:description>
         <rdfs:subPropertyOf rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
     </owl:ObjectProperty>
     
@@ -410,7 +432,18 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
     <!-- http://purl.obolibrary.org/obo/OGI.owl#isContainedIn -->
 
     <owl:ObjectProperty rdf:about="&obo;OGI.owl#isContainedIn">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <obo:IAO_0000115 xml:lang="en">isContainedIn(X,Y) genetic interval X is contained inside genetic interval Y
+If genetic interval X is contained in genetic interval Y, then start of X is after the
+start of Y and the end of X is before the end of Y and the start of X is unique with thestart of Y, the end of X is unique with the end of Y.
+</obo:IAO_0000115>
+        <dc:description xml:lang="en">isContainedIn(X,Y) ↔
+    (hasStartPoint(x1,X) &amp; hasStartPoint(y1,Y) &amp; isLocatedAfter(x1,y1))
+    &amp;  (hasEndPoint(x2,X) &amp; hasEndPoint(y2,Y) &amp; isLocatedBefore(x2,y2)) 
+    &amp; ((pointInterval(x1,X) &amp; pointInterval(y1,X)) 
+    &amp; ((pointInterval(x2,X) &amp; pointInterval(y2,X)) 
+</dc:description>
+        <rdfs:comment>unsolved problem, Is isContainedIn a transitive relation?</rdfs:comment>
+        <rdfs:domain rdf:resource="&obo;OGI_0000001"/>
         <rdfs:range rdf:resource="&obo;OGI_0000001"/>
         <rdfs:subPropertyOf rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
     </owl:ObjectProperty>
@@ -420,6 +453,13 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
     <!-- http://purl.obolibrary.org/obo/OGI.owl#isEndsWith -->
 
     <owl:ObjectProperty rdf:about="&obo;OGI.owl#isEndsWith">
+        <obo:IAO_0000115 xml:lang="en">isEndsWith(X,Y) : genetic interval X ends with genetic interval Y 
+If genetic interval X ends with genetic interval Y, then the end of X and the end of 
+Y are identical and the start of X is after the start of Y.</obo:IAO_0000115>
+        <dc:description xml:lang="en">isEndsWith(X,Y) ↔
+   ((hasEndPoint(x1,X) &amp; hasEndPoint(x1,Y)) 
+   &amp; (hasStartPoint(x2,X) &amp; hasStartPoint(y,Y)
+   &amp; isLocatedAfter(x2,y)) </dc:description>
         <rdfs:subPropertyOf rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
     </owl:ObjectProperty>
     
@@ -428,7 +468,16 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
     <!-- http://purl.obolibrary.org/obo/OGI.owl#isLocatedAfter -->
 
     <owl:ObjectProperty rdf:about="&obo;OGI.owl#isLocatedAfter">
+        <obo:IAO_0000115 xml:lang="en">isLocatedAfter(X,Y) : genetic interval X is located after genetic interval Y 
+If genetic interval X is located after genetic interval Y, then the start of X is after the end of Y; or the end of Y is before the start of X.
+ If isLocatedBefore(X,Y), then isLocatedAfter(Y,X) </obo:IAO_0000115>
+        <dc:description xml:lang="en">isLocatedAfter(X,Y) ↔
+    (hasStartPoint(x1,X) &amp; hasEndPoint(y1,Y) &amp; isLocatedAfter(x1,y1)) 
+   OR (hasEndPoint(x2,X) &amp;. hasStartPoint(y2,Y) &amp; isLocatedBefore(y2,x2)) 
+   
+isLocatedAfter(X,Y) == isLocatedBefore(Y,X) </dc:description>
         <rdfs:subPropertyOf rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
+        <owl:inverseOf rdf:resource="&obo;OGI.owl#isLocatedBefore"/>
     </owl:ObjectProperty>
     
 
@@ -436,6 +485,11 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
     <!-- http://purl.obolibrary.org/obo/OGI.owl#isLocatedBefore -->
 
     <owl:ObjectProperty rdf:about="&obo;OGI.owl#isLocatedBefore">
+        <obo:IAO_0000115 xml:lang="en">isLocatedBefore is both a Class-Class and an Instance-Instance relation. 
+isLocatedBefore(X,Y): genetic interval X is located before genetic interval Y 
+If genetic interval X is located before genetic interval Y, then the end of X is before the start of Y. </obo:IAO_0000115>
+        <dc:description xml:lang="en">isLocatedBefore(X,Y) ↔
+  hasEndPoint(x,X) &amp; hasStartPoint(y,Y) &amp;  isLocatedBefore(x,y) </dc:description>
         <rdfs:subPropertyOf rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
     </owl:ObjectProperty>
     
@@ -608,6 +662,12 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
     <rdf:Description rdf:about="&obo;GO_0005694">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#isStructurePartOf"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000084"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasStructurePart"/>
                 <owl:allValuesFrom>
                     <owl:Class>
@@ -617,12 +677,6 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
                         </owl:unionOf>
                     </owl:Class>
                 </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#isStructurePartOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000084"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -646,6 +700,30 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasStartPoint"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasEndPoint"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_1000003"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasEndPoint"/>
+                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasStartPoint"/>
                 <owl:allValuesFrom rdf:resource="&obo;OGI_1000004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -659,30 +737,6 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasEndPoint"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_1000003"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasStartPoint"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasEndPoint"/>
-                <owl:cardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasIntervalRelation"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>the spatial continuous physical entity which contains ordered biological sets (DNA segments, Genetic Markers, Nucleic Acid Base Residues, RNA segments, Protein segments) between two boundaries: start boundary and end boundary on a chromosome, RNA or protein.</obo:IAO_0000115>
@@ -737,20 +791,14 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#isTranscribedTo"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Transcript"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasGeneLocus"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000023"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimarySequence"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000073"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -768,8 +816,14 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#isTranscribedTo"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#Transcript"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimarySequence"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string">in RNA virus, there will be RNA interval codes for protein.</rdfs:comment>
@@ -802,7 +856,7 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#isStructurePartOf"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#DNA_Molecule"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#DNA_Molecule"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -813,14 +867,14 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#isStructurePartOf"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI.owl#DNA_Molecule"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryDNASequence"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_0000073"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryDNASequence"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_0000073"/>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#isStructurePartOf"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI.owl#DNA_Molecule"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">naturally material segment of DNA molecule located in a chromosome</obo:IAO_0000115>
@@ -851,7 +905,9 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
     <owl:Class rdf:about="&obo;OGI_0000008">
         <rdfs:label xml:lang="en">allele</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGI_0000006"/>
-        <obo:IAO_0000115 xml:lang="en">is alternative forms of genetic information</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;anyURI">http://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI%20Thesaurus&amp;code=C16277</obo:IAO_0000119>
+        <rdfs:comment xml:lang="en"> One of two or more DNA sequences occurring at a particular gene locus. Typically one allele (normal DNA sequence) is common, and other alleles (mutations) are rare.</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">Mutually exclusive alternative forms of the same genetic interval occupying the same locus on homologous chromosomes, differing in DNA sequence and governing the same biochemical and developmental process.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1075,7 +1131,7 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000037"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a genomic site that is occupied by alleles of polymorphic</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">a genomic site that is occupied by alleles of polymorphism</obo:IAO_0000115>
         <obo:IAO_0000232 xml:lang="en">this seems similar with SO&apos;s sequence feature.</obo:IAO_0000232>
     </owl:Class>
     
@@ -1157,7 +1213,14 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
 
     <owl:Class rdf:about="&obo;OGI_0000035">
         <rdfs:label xml:lang="en">allele of gene</rdfs:label>
+        <owl:equivalentClass rdf:resource="&obo;SO_0001023"/>
         <rdfs:subClassOf rdf:resource="&obo;OGI_0000008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;so_variant_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasOccupiesLocus"/>
@@ -1209,13 +1272,13 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPart"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_0000041"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000041"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPart"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000041"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_0000041"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1262,14 +1325,13 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf rdf:resource="&obo;OGI_0000006"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasContainedInterval"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000037"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasContainedInterval"/>
-                <owl:minCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minCardinality>
+                <owl:onProperty>
+                    <rdf:Description>
+                        <owl:inverseOf rdf:resource="&obo;OGI.owl#isContainedIn"/>
+                    </rdf:Description>
+                </owl:onProperty>
+                <owl:onClass rdf:resource="&obo;OGI_0000037"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:minQualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1380,6 +1442,19 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasOccupiesSite"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OGI_0000032"/>
+                            <rdf:Description rdf:about="&obo;OGI_0000034"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPolymorphismQuality"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000089"/>
             </owl:Restriction>
@@ -1394,19 +1469,6 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerProbe"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasOccupiesSite"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="&obo;OGI_0000032"/>
-                            <rdf:Description rdf:about="&obo;OGI_0000034"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A genetic marker is a gene or DNA sequence with a known location on a chromosome that can be used to identify individuals or species. It can be described as a variation (which may arise due to mutation or alteration in the genomic loci) that can be observed. A genetic marker may be a short DNA sequence, such as a sequence surrounding a single base-pair change (single nucleotide polymorphism, SNP), or a long one, like minisatellites.</obo:IAO_0000115>
@@ -1458,13 +1520,13 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerRole"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000018"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasMarkerRole"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_0000018"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2051,6 +2113,12 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SO_0001023 -->
+
+    <rdf:Description rdf:about="&obo;SO_0001023"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SO_0001026 -->
 
     <rdf:Description rdf:about="&obo;SO_0001026">
@@ -2250,13 +2318,13 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimarySequence"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_0000025"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimarySequence"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000025"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_0000025"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2349,13 +2417,13 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_0000072"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGI_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
-                <owl:someValuesFrom rdf:resource="&obo;OGI_0000072"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -2391,12 +2459,6 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
-                <owl:allValuesFrom rdf:resource="&obo;OGI_0000072"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2404,6 +2466,12 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OGI.owl#isTranscribedBy"/>
                 <owl:someValuesFrom rdf:resource="&obo;OGI_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OGI.owl#hasPrimaryRNASequence"/>
+                <owl:allValuesFrom rdf:resource="&obo;OGI_0000072"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="&xsd;string">An RNA synthesized on a DNA or RNA template by an RNA polymerase.</rdfs:comment>
