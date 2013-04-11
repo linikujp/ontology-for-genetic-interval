@@ -133,7 +133,7 @@
     <!-- http://purl.obolibrary.org/obo/SO_0000704 -->
 
     <owl:Class rdf:about="&obo;SO_0000704">
-        <rdfs:label xml:lang="en">gene</rdfs:label>
+        <rdfs:label xml:lang="en">SO:gene</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;SO_0001411"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.</obo:IAO_0000115>
         <obo:IAO_id rdf:datatype="&xsd;string">SO:0000704</obo:IAO_id>
@@ -148,7 +148,7 @@
     <!-- http://purl.obolibrary.org/obo/SO_0001023 -->
 
     <owl:Class rdf:about="&obo;SO_0001023">
-        <rdfs:label rdf:datatype="&xsd;string">allele</rdfs:label>
+        <rdfs:label xml:lang="en">SO:allele</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGI_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
