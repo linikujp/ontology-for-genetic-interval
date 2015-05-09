@@ -1,0 +1,29 @@
+#Matt's proposal for genetic material
+
+# Genetic material discussion in OBI group #
+
+Matthew Brush via lists.sourceforge.net 10:27 AM (4 hours ago)
+
+to OBI
+
+
+Hello.  Recent requests have prompted us to revisit an unresolved issue from 2011 (https://groups.google.com/d/msg/obi-developer/EdqD5EZ8rFg/NpcIqeRp_QwJ), regarding the need for a 'genetic/genomic material' class in OBI (final label pending). This was discussed on developer calls over the last two weeks and the following definition agreed upon:
+
+“a nucleic acid macromolecule that is part of a cell or virion and is inherited from an immediate ancestor, or incorporated in a manner that it has the disposition to be replicated and inherited by descendants.”
+
+Naturally occurring or experimentally incorporated nucleic acids that meet these criteria can qualify as genetic/genomic material. For example, a chromosomally-integrated transgene or a stable extra-chromosomal replicon would qualify.  However, a transiently transfected plasmid or siRNA oligo would not - as these are not able to be replicated and inherited by progeny cells.
+
+Feedback/comments welcome over the next week, at which point this will be implemented in OBI. Note that this is a complex an nuanced concept, and our discussions covered many issues, perspectives, and problems (particularly related to experimental genetic material).  A more detailed review of this proposal and related issues can be found in the 3-4-13 call summary notes (https://groups.google.com/forum/#!msg/obi-developer/SSB-6RDckBM/OIm7dDtwcoIJ), and the ppt slides from this call (http://obi.svn.sourceforge.net/viewvc/obi/trunk/docs/developer/OBI%20Developer%20Call%20Presentations/3-4-13_OBI_GeneticMateiral.pptx?view=log).  Please review these documents for more information.
+
+Thanks!
+Matt
+
+
+Matthew H. Brush
+Research Associate
+OHSU Ontology Development Group
+Department of Medical Informatics and Clinical Epidemiology
+Oregon Health and Science University
+phone :  919-452-6914
+fax :  503-346-6815
+brushm@ohsu.edu
