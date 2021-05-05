@@ -1,0 +1,31 @@
+oldid ; newid 
+http://purl.obolibrary.org/obo/OGI.owl#Polypeptide_Encoding_Gene ; http://purl.obolibrary.org/obo/OGI_0000106 
+http://purl.obolibrary.org/obo/OGI.owl#Pseudogene ; http://purl.obolibrary.org/obo/OGI_0000107 
+http://purl.obolibrary.org/obo/OGI.owl#RNA_Gene ; http://purl.obolibrary.org/obo/OGI_0000108
+http://purl.obolibrary.org/obo/OGI.owl#Transcript ; 
+http://purl.obolibrary.org/obo/OGI.owl#CpG_Island ; http://purl.obolibrary.org/obo/OGI_0000109
+http://purl.obolibrary.org/obo/OGI.owl#Enhancer ; http://purl.obolibrary.org/obo/OGI_0000110
+http://purl.obolibrary.org/obo/OGI.owl#Promoter ; http://purl.obolibrary.org/obo/OGI_0000111
+http://purl.obolibrary.org/obo/OGI.owl#Biological_Molecule ; http://purl.obolibrary.org/obo/OGI_0000112
+http://purl.obolibrary.org/obo/OGI.owl#Biological_Small_Molecule ; http://purl.obolibrary.org/obo/OGI_0000113
+http://purl.obolibrary.org/obo/OGI.owl#Biological_Macromolecule ; http://purl.obolibrary.org/obo/OGI_0000114
+http://purl.obolibrary.org/obo/OGI.owl#Polymer ; http://purl.obolibrary.org/obo/OGI_0000115
+http://purl.obolibrary.org/obo/OGI.owl#Nucleic_Acid ; http://purl.obolibrary.org/obo/OGI_0000116
+http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule ; http://purl.obolibrary.org/obo/OGI_0000117
+http://purl.obolibrary.org/obo/OGI.owl#rRNA ; http://purl.obolibrary.org/obo/OGI_0000118
+http://purl.obolibrary.org/obo/OGI.owl#tRNA ; http://purl.obolibrary.org/obo/OGI_0000119
+http://purl.obolibrary.org/obo/OGI.owl#Coding_RNA_Molecule ; http://purl.obolibrary.org/obo/OGI_0000121
+http://purl.obolibrary.org/obo/OGI.owl#Non_Coding_RNA_Molecule ; http://purl.obolibrary.org/obo/OGI_0000120
+http://purl.obolibrary.org/obo/OGI.owl#Transcript ; http://purl.obolibrary.org/obo/OGI_0000122
+http://purl.obolibrary.org/obo/OGI.owl#miRNA ; http://purl.obolibrary.org/obo/OGI_0000123
+http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule ; http://purl.obolibrary.org/obo/OGI_0000124
+http://purl.obolibrary.org/obo/OGI.owl#Genomic_DNA; http://purl.obolibrary.org/obo/OGI_0000125
+http://purl.obolibrary.org/obo/OGI.owl#msDNA ; http://purl.obolibrary.org/obo/OGI_0000126
+http://purl.obolibrary.org/obo/OGI.owl#cDNA ; http://purl.obolibrary.org/obo/OGI_0000127
+http://purl.obolibrary.org/obo/OGI.owl#mtDNA ; http://purl.obolibrary.org/obo/OGI_0000128
+http://purl.obolibrary.org/obo/OGI.owl#mRNA ; http://purl.obolibrary.org/obo/OGI_0000129
+http://purl.obolibrary.org/obo/OGI.owl#Primary_Transcript ; http://purl.obolibrary.org/obo/OGI_0000130
+http://purl.obolibrary.org/obo/OGI.owl#Polypeptide ; http://purl.obolibrary.org/obo/OGI_0000131
+http://purl.obolibrary.org/obo/OGI.owl#STS_Non_Polymorphic_Marker ; http://purl.obolibrary.org/obo/OGI_0000132
+http://purl.obolibrary.org/obo/OGSF_0000104 ; http://purl.obolibrary.org/obo/OGI_0000133
+http://purl.obolibrary.org/obo/OGSF_0000103 ; http://purl.obolibrary.org/obo/OGI_0000134

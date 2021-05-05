@@ -1,23 +1,13 @@
 <?xml version="1.0"?>
-
-
-<!DOCTYPE rdf:RDF [
-    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
-    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
-    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-]>
-
-
-<rdf:RDF xmlns="&obo;ogi/SO_import.owl#"
-     xml:base="&obo;ogi/SO_import.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ogi/SO_import.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ogi/SO_import.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="&obo;ogi/SO_import.owl"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ogi/SO_import.owl"/>
     
 
 
@@ -29,25 +19,44 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_id"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_xref"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_subset"/>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_id -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_id"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_subset -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_subset"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_xref -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_xref"/>
     
 
 
@@ -64,25 +73,25 @@
 
     <!-- http://purl.obolibrary.org/obo/so_has_part -->
 
-    <owl:ObjectProperty rdf:about="&obo;so_has_part">
-        <rdfs:label rdf:datatype="&xsd;string">has_part</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/so_has_part">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">has_part</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/so_member_of -->
 
-    <owl:ObjectProperty rdf:about="&obo;so_member_of">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label rdf:datatype="&xsd;string">member_of</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/so_member_of">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">member_of</rdfs:label>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/so_variant_of -->
 
-    <owl:ObjectProperty rdf:about="&obo;so_variant_of">
-        <rdfs:label rdf:datatype="&xsd;string">variant_of</rdfs:label>
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/so_variant_of">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">variant_of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -100,98 +109,98 @@
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000027 -->
 
-    <owl:Class rdf:about="&obo;BFO_0000027"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000027"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
 
-    <owl:Class rdf:about="&obo;BFO_0000031"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGI_0000002 -->
 
-    <owl:Class rdf:about="&obo;OGI_0000002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000002"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SO_0000001 -->
 
-    <owl:Class rdf:about="&obo;SO_0000001">
-        <rdfs:label rdf:datatype="&xsd;string">region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000031"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A sequence_feature with an extent greater than zero. A nucleotide region is composed of bases and a polypeptide region is composed of amino acids.</obo:IAO_0000115>
-        <obo:IAO_id rdf:datatype="&xsd;string">SO:0000001</obo:IAO_id>
-        <obo:IAO_subset rdf:datatype="&xsd;string">SOFA</obo:IAO_subset>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">sequence</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A sequence_feature with an extent greater than zero. A nucleotide region is composed of bases and a polypeptide region is composed of amino acids.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sequence</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <obo:IAO_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0000001</obo:IAO_id>
+        <obo:IAO_subset rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOFA</obo:IAO_subset>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">region</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SO_0000704 -->
 
-    <owl:Class rdf:about="&obo;SO_0000704">
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000704">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001411"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <obo:IAO_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0000704</obo:IAO_id>
+        <obo:IAO_subset rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOFA</obo:IAO_subset>
+        <obo:IAO_xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Gene</obo:IAO_xref>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This term is mapped to MGED. Do not obsolete without consulting MGED ontology. A gene may be considered as a unit of inheritance.</rdfs:comment>
         <rdfs:label xml:lang="en">SO:gene</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;SO_0001411"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A region (or regions) that includes all of the sequence elements necessary to encode a functional transcript. A gene may include regulatory regions, transcribed regions and/or other functional sequence regions.</obo:IAO_0000115>
-        <obo:IAO_id rdf:datatype="&xsd;string">SO:0000704</obo:IAO_id>
-        <obo:IAO_subset rdf:datatype="&xsd;string">SOFA</obo:IAO_subset>
-        <rdfs:comment rdf:datatype="&xsd;string">This term is mapped to MGED. Do not obsolete without consulting MGED ontology. A gene may be considered as a unit of inheritance.</rdfs:comment>
-        <obo:IAO_xref rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Gene</obo:IAO_xref>
-        <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SO_0001023 -->
 
-    <owl:Class rdf:about="&obo;SO_0001023">
-        <rdfs:label xml:lang="en">SO:allele</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OGI_0000002"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001023">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;so_variant_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;SO_0000704"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/so_variant_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0000704"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">An allele is one of a set of coexisting sequence variants of a gene.</obo:IAO_0000115>
-        <obo:IAO_id rdf:datatype="&xsd;string">SO:0001023</obo:IAO_id>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">allelomorph</obo:IAO_0000118>
-        <obo:IAO_xref rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Allele</obo:IAO_xref>
-        <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An allele is one of a set of coexisting sequence variants of a gene.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">allelomorph</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <obo:IAO_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0001023</obo:IAO_id>
+        <obo:IAO_xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Allele</obo:IAO_xref>
+        <rdfs:label xml:lang="en">allele</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SO_0001026 -->
 
-    <owl:Class rdf:about="&obo;SO_0001026">
-        <rdfs:label rdf:datatype="&xsd;string">genome</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000027"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A genome is the sum of genetic material within a cell or virion.</obo:IAO_0000115>
-        <obo:IAO_id rdf:datatype="&xsd;string">SO:0001026</obo:IAO_id>
-        <obo:IAO_xref rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Genome</obo:IAO_xref>
-        <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001026">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000027"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A genome is the sum of genetic material within a cell or virion.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <obo:IAO_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0001026</obo:IAO_id>
+        <obo:IAO_xref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Genome</obo:IAO_xref>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">genome</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SO_0001411 -->
 
-    <owl:Class rdf:about="&obo;SO_0001411">
-        <rdfs:label rdf:datatype="&xsd;string">biological_region</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;SO_0000001"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A region defined by its disposition to be involved in a biological process.</obo:IAO_0000115>
-        <obo:IAO_id rdf:datatype="&xsd;string">SO:0001411</obo:IAO_id>
-        <obo:IAO_subset rdf:datatype="&xsd;string">SOFA</obo:IAO_subset>
-        <obo:IAO_0000118 rdf:datatype="&xsd;string">biological region</obo:IAO_0000118>
-        <obo:IAO_0000412 rdf:resource="&obo;so.owl"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001411">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A region defined by its disposition to be involved in a biological process.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological region</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <obo:IAO_id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SO:0001411</obo:IAO_id>
+        <obo:IAO_subset rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SOFA</obo:IAO_subset>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological_region</rdfs:label>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

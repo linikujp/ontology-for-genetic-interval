@@ -97,6 +97,12 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
@@ -144,6 +150,51 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGI_0000085 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGI_0000085">
+        <obo:IAO_0000116>This is the BFO_0000165</obo:IAO_0000116>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T22:45:43Z</dc:date>
+        <rdfs:label xml:lang="en">concretized by at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000103 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGI_0000103">
+        <obo:IAO_0000116>This is for BFO_0000080</obo:IAO_0000116>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T22:47:35Z</dc:date>
+        <rdfs:label xml:lang="en">quality of at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000104 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGI_0000104">
+        <obo:IAO_0000116>For BFO_0000082</obo:IAO_0000116>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T22:50:08Z</dc:date>
+        <rdfs:label xml:lang="en">located in at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000105 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGI_0000105">
+        <obo:IAO_0000116>For BFO_0000111</obo:IAO_0000116>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T22:51:08Z</dc:date>
+        <rdfs:label xml:lang="en">has proper continuant part at all times</rdfs:label>
+        <rdfs:seeAlso>http://nmrml.org/cv/v1.0.rc1/doc/doc/objectproperties/BFO0000111___-324347699.html</rdfs:seeAlso>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGI.owl#hasBearer -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGI.owl#hasBearer"/>
@@ -154,7 +205,7 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGI.owl#hasBiomoleculeBoundary">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Biological_Macromolecule"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OGI_0000114"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OGI_1000001"/>
     </owl:ObjectProperty>
     
@@ -322,7 +373,7 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryAASequence">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimarySequence"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Polypeptide"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OGI_0000131"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OGI_0000025"/>
     </owl:ObjectProperty>
     
@@ -336,7 +387,7 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI_0000006"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI_0000124"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:domain>
@@ -349,7 +400,7 @@ Yu Lin, Peter Simons (2010) “DNA sequence from below: A Nominalist Approach”
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryRNASequence">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimarySequence"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OGI_0000117"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OGI_0000072"/>
     </owl:ObjectProperty>
     
@@ -469,8 +520,8 @@ identical with the start of Y.
         <rdfs:range>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI_0000117"/>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Protein"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
                 </owl:unionOf>
             </owl:Class>
         </rdfs:range>
@@ -628,7 +679,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGI.owl#isTranscribedBy">
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isTranscribedTo"/>
-        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Transcript"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OGI_0000122"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OGI_0000004"/>
     </owl:ObjectProperty>
     
@@ -638,7 +689,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OGI.owl#isTranscribedTo">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OGI_0000004"/>
-        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Transcript"/>
+        <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OGI_0000122"/>
     </owl:ObjectProperty>
     
 
@@ -730,7 +781,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI_0000124"/>
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Histone"/>
                         </owl:unionOf>
                     </owl:Class>
@@ -738,15 +789,6 @@ If genetic interval X is located before genetic interval Y, then the end of X is
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl_0000014 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl_0000014">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000011"/>
-        <rdfs:label xml:lang="en">three dimention structure of biological interval</rdfs:label>
-    </owl:Class>
     
 
 
@@ -864,8 +906,8 @@ If genetic interval X is located before genetic interval Y, then the end of X is
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI_0000117"/>
                             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Protein"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -880,7 +922,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isTranscribedTo"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Transcript"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000122"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">a genetic interval that correspond to one or more DNA sequences that carry the coding information required to produce a specific protein, and that protein in turn carries out a particular function within te cell.</obo:IAO_0000115>
@@ -919,7 +961,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isStructurePartOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -931,7 +973,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isStructurePartOf"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">naturally material segment of DNA molecule located in a chromosome</obo:IAO_0000115>
@@ -1031,6 +1073,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000014">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasStructure"/>
@@ -1331,6 +1374,8 @@ If genetic interval X is located before genetic interval Y, then the end of X is
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000041"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">The coding region of a gene, also known as the CDS (from coding sequence), is the portion of a gene&apos;s DNA or RNA that codes for protein.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Coding_region</obo:IAO_0000119>
         <rdfs:label xml:lang="en">CDS</rdfs:label>
     </owl:Class>
     
@@ -1557,7 +1602,7 @@ If genetic interval X is located before genetic interval Y, then the end of X is
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#STS_Non_Polymorphic_Marker"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI_0000132"/>
         <rdfs:label xml:lang="en">polymorphic DNA marker</rdfs:label>
     </owl:Class>
     
@@ -1835,6 +1880,8 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">A contig (from contiguous) is a set of overlapping DNA segments that together represent a consensus region of DNA.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Contig</obo:IAO_0000119>
         <rdfs:label xml:lang="en">contig</rdfs:label>
     </owl:Class>
     
@@ -1844,6 +1891,8 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000081">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000019"/>
+        <obo:IAO_0000115 xml:lang="en">A gene family is a set of several similar genes, formed by duplication of a single original gene, and generally with similar biochemical functions.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Gene_family</obo:IAO_0000119>
         <rdfs:label xml:lang="en">gene family</rdfs:label>
     </owl:Class>
     
@@ -1873,7 +1922,7 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasComponentPart"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#mtDNA"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000128"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">genome that is located in mitochondria.</obo:IAO_0000115>
@@ -1895,7 +1944,7 @@ we can think genetic map as a marker sequence modeling same with DNA seuqence.</
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasComponentPart"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Genomic_DNA"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000125"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">set of 24 different chromosomal DNA molecules located in nucleus</rdfs:comment>
@@ -2093,6 +2142,475 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGI_0000106 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000106">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000004"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI_0000107"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI_0000108"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:10:17Z</dc:date>
+        <rdfs:label xml:lang="en">polypeptide coding gene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000107 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000107">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000004"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI_0000108"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:15:49Z</dc:date>
+        <rdfs:label xml:lang="en">pseudogene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000108 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000108">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000004"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isCodeFor"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isCodeFor"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000117"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:17:20Z</dc:date>
+        <rdfs:label xml:lang="en">RNA gene</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000109 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000042"/>
+        <obo:IAO_0000115 xml:lang="en">CpG islands (or CG islands) are regions with a high frequency of CpG sites. Though objective definitions for CpG islands are limited, the usual formal definition is a region with at least 200 bp, a GC percentage greater than 50%, and an observed-to-expected CpG ratio greater than 60%.</obo:IAO_0000115>
+        <obo:IAO_0000116 xml:lang="en">Sets of CG repeat elements, usually found upstream of transcribed regions of the genome.</obo:IAO_0000116>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/CpG_site</obo:IAO_0000119>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:24:28Z</dc:date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CpG islands are commonly defined as regions of DNA of at least 200 bp in length and that have a G+C content above 50% and a ratio of observed vs. expected CpGs close to or above 0.6. ( Ref. Gardiner-Garden and Fromer (1987) ). Sets of CG repeat elements, usually found upstream of transcribed regions of the genome.</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CpG Island</rdfs:label>
+        <rdfs:label xml:lang="en">CpG island</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000110 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000110">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000042"/>
+        <obo:IAO_0000115 xml:lang="en">a set of short sequence elements which stimulate transcription of a gene and whose function is not critically dependent on their precise position or orientation.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Human_Molecular_Genetics3"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:28:36Z</dc:date>
+        <dc:description xml:lang="en">An enhancer is a short region of DNA that can be bound with proteins (namely, the trans-acting factors, much like a set of transcription factors) to enhance transcription levels of genes (hence the name) in a gene cluster. While enhancers are usually cis-acting, an enhancer does not need to be particularly close to the genes it acts on, and sometimes need not be located on the same chromosome. (http://en.wikipedia.org/wiki/Enhancer_(genetics))</dc:description>
+        <rdfs:label xml:lang="en">enhancer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000111 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000111">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000042"/>
+        <obo:IAO_0000115 xml:lang="en">A combination of short sequence elements, normally just upstream of a gene, to which RNA polymerase binds in order to initiate transcription of the gene.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Human_Molecular_Genetics3"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:31:27Z</dc:date>
+        <dc:description xml:lang="en">In genetics, a promoter is a region of DNA that initiates transcription of a particular gene. Promoters are located near the genes they transcribe, on the same strand and upstream on the DNA (towards the 3&apos; region of the anti-sense strand, also called template strand and non-coding strand). Promoters can be about 100–1000 base pairs long. (http://en.wikipedia.org/wiki/Promoter_(genetics))</dc:description>
+        <rdfs:label xml:lang="en">promoter</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000112">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:42:13Z</dc:date>
+        <rdfs:label xml:lang="en">bilogical molecule</rdfs:label>
+        <rdfs:label>biological molecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000113 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000112"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:43:17Z</dc:date>
+        <rdfs:label xml:lang="en">biological small molecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000114 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000114">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000112"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasBiomoleculeBoundary"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_1000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:44:20Z</dc:date>
+        <rdfs:label xml:lang="en">biological macromolecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000115 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000115">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000114"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:45:36Z</dc:date>
+        <rdfs:label xml:lang="en">polymer</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polymer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000116 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000116">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI_0000117"/>
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI_0000124"/>
+                </owl:unionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000115"/>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI_0000131"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:46:35Z</dc:date>
+        <rdfs:label xml:lang="en">nucleic acid</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000116"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryRNASequence"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryRNASequence"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI_0000124"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:47:52Z</dc:date>
+        <rdfs:label xml:lang="en">RNA molecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000118 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000118">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000117"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:48:47Z</dc:date>
+        <oboInOwl:hasExactSynonym xml:lang="en">rRNA</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ribosomal RNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000119 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000119">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000117"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:49:39Z</dc:date>
+        <oboInOwl:hasExactSynonym xml:lang="en">tRNA</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transfer RNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000120">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000117"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:52:28Z</dc:date>
+        <rdfs:label xml:lang="en">non coding RNA molecule</rdfs:label>
+        <rdfs:label xml:lang="en">non codling RNA molecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000121 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000121">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000117"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:52:28Z</dc:date>
+        <rdfs:label xml:lang="en">coding RNA molecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000122">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000117"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryRNASequence"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isTranscribedBy"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000004"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryRNASequence"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:52:28Z</dc:date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An RNA synthesized on a DNA or RNA template by an RNA polymerase.</rdfs:comment>
+        <rdfs:label xml:lang="en">transcript</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000123">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000117"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:55:39Z</dc:date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short(22nt) RNA molecules encoded within normal genomes that have a role in regulation of gene expression and maybe also of chromatin structure. Sometimes called small temporal RNA(stRNA).</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Human_Molecular_Genetics3"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micro RNAs</rdfs:label>
+        <rdfs:label xml:lang="en">miRNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000124 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000124">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI_0000116"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasBiomoleculeBoundary"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_1000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryDNASequence"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000073"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasBiomoleculeBoundary"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_1000001"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryDNASequence"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000073"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000116"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:57:03Z</dc:date>
+        <oboInOwl:hasExactSynonym xml:lang="en">DNA molecule</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dexyribonuleic acid molecule</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000125">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000124"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-04T23:58:14Z</dc:date>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">also gDNA</rdfs:comment>
+        <rdfs:label xml:lang="en">genomic DNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000126">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000124"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-05T00:00:27Z</dc:date>
+        <oboInOwl:hasExactSynonym xml:lang="en">msDNA</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multicopy single-stranded DNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000127 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000127">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000124"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-05T00:02:39Z</dc:date>
+        <oboInOwl:hasExactSynonym xml:lang="en">cDNA</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In genetics, complementary DNA (cDNA) is DNA synthesized from a mature mRNA template in a reaction catalyzed by the enzyme reverse transcriptase.(wikipedia)</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complementary DNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000128">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000124"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isStructurePartOf"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000083"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-05T00:04:06Z</dc:date>
+        <oboInOwl:hasExactSynonym xml:lang="en">mtDNA</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitochondrial DNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000129 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000129">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000122"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-05T00:05:02Z</dc:date>
+        <oboInOwl:hasExactSynonym xml:lang="en">mRNA</oboInOwl:hasExactSynonym>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">messenger RNA</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000130 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000130">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000122"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-05T00:08:30Z</dc:date>
+        <rdfs:label xml:lang="en">primary transcript</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000131 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000131">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000115"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimarySequence"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isStructurePartOf"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Protein"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimarySequence"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000025"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-05T00:10:21Z</dc:date>
+        <rdfs:label xml:lang="en">polypeptide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000132">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000055"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasMarkerRole"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasMarkerRole"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000018"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-05T00:12:35Z</dc:date>
+        <rdfs:label xml:lang="en">STS non polymorphic marker</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000133 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000133">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000014"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-05T00:15:06Z</dc:date>
+        <rdfs:label xml:lang="en">three dimention structure of genetic interval</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGI_0000134 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_0000134">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000015"/>
+        <dc:creator rdf:datatype="http://www.w3.org/2001/XMLSchema#string">linay</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-05-05T00:18:20Z</dc:date>
+        <rdfs:label xml:lang="en">two dimentional structure of genetic interval</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGI_1000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI_1000001">
@@ -2132,24 +2650,6 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGSF_0000103 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGSF_0000103">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000015"/>
-        <rdfs:label xml:lang="en">two dimentional structure of genetic interval</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGSF_0000104 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGSF_0000104">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl_0000014"/>
-        <rdfs:label xml:lang="en">three dimention structure of genetic interval</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SO_0001023 -->
 
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SO_0001023"/>
@@ -2162,7 +2662,7 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000111"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Nucleic_Acid"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000116"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
@@ -2176,39 +2676,6 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
         <obo:IAO_0000115 xml:lang="en"> a human being that bears an author role.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
         <rdfs:label xml:lang="en">author</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Biological_Macromolecule -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Biological_Macromolecule">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Biological_Molecule"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasBiomoleculeBoundary"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_1000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">biological macromolecule</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Biological_Molecule -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Biological_Molecule">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:label>biological molecule</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Biological_Small_Molecule -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Biological_Small_Molecule">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Biological_Molecule"/>
-        <rdfs:label xml:lang="en">biological small molecule</rdfs:label>
     </owl:Class>
     
 
@@ -2228,80 +2695,6 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Coding_RNA_Molecule -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Coding_RNA_Molecule">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
-        <rdfs:label xml:lang="en">coding RNA molecule</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#CpG_Island -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#CpG_Island">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000042"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CpG islands are commonly defined as regions of DNA of at least 200 bp in length and that have a G+C content above 50% and a ratio of observed vs. expected CpGs close to or above 0.6. ( Ref. Gardiner-Garden and Fromer (1987) ). Sets of CG repeat elements, usually found upstream of transcribed regions of the genome.</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CpG Island</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Nucleic_Acid"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasBiomoleculeBoundary"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_1000001"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryDNASequence"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000073"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasBiomoleculeBoundary"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_1000001"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryDNASequence"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000073"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dexyribonuleic acid molecule</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Enhancer -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Enhancer">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000042"/>
-        <obo:IAO_0000115>a set of short sequence elements which stimulate transcription of a gene and whose function is not critically dependent on their precise position or orientation.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Human_Molecular_Genetics3"/>
-        <dc:description xml:lang="en">An enhancer is a short region of DNA that can be bound with proteins (namely, the trans-acting factors, much like a set of transcription factors) to enhance transcription levels of genes (hence the name) in a gene cluster. While enhancers are usually cis-acting, an enhancer does not need to be particularly close to the genes it acts on, and sometimes need not be located on the same chromosome. (http://en.wikipedia.org/wiki/Enhancer_(genetics))</dc:description>
-        <rdfs:label xml:lang="en">enhancer</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Genomic_DNA -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Genomic_DNA">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">also gDNA</rdfs:comment>
-        <rdfs:label xml:lang="en">genomic DNA</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OGI.owl#Histone -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Histone">
@@ -2311,280 +2704,11 @@ And it may be a process that leads to the existence of genetic polymorphism</rdf
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Non_Coding_RNA_Molecule -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Non_Coding_RNA_Molecule">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
-        <rdfs:label xml:lang="en">non codling RNA molecule</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Nucleic_Acid -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Nucleic_Acid">
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule"/>
-                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
-                </owl:unionOf>
-            </owl:Class>
-        </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Polymer"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Polypeptide"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nucleic acid</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Polymer -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Polymer">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Biological_Macromolecule"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">polymer</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Polypeptide -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Polypeptide">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Polymer"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimarySequence"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000025"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isStructurePartOf"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Protein"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimarySequence"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000025"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">polypeptide</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Polypeptide_Encoding_Gene -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Polypeptide_Encoding_Gene">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000004"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Pseudogene"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Gene"/>
-        <rdfs:label xml:lang="en">polypeptide coding gene</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Primary_Transcript -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Primary_Transcript">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Transcript"/>
-        <rdfs:label xml:lang="en">primary transcript</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Promoter -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Promoter">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000042"/>
-        <obo:IAO_0000115>a combination of short sequence elements, normally just upstream of a gene, to which RNA polymerase binds in order to initiate transcription of the gene.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Human_Molecular_Genetics3"/>
-        <dc:description xml:lang="en">In genetics, a promoter is a region of DNA that initiates transcription of a particular gene. Promoters are located near the genes they transcribe, on the same strand and upstream on the DNA (towards the 3&apos; region of the anti-sense strand, also called template strand and non-coding strand). Promoters can be about 100–1000 base pairs long. (http://en.wikipedia.org/wiki/Promoter_(genetics))</dc:description>
-        <rdfs:label xml:lang="en">promoter</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OGI.owl#Protein -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Protein">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Polymer"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000115"/>
         <rdfs:label xml:lang="en">protein</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Pseudogene -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Pseudogene">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000004"/>
-        <owl:disjointWith rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Gene"/>
-        <rdfs:label xml:lang="en">pseudogene</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#RNA_Gene -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#RNA_Gene">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000004"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isCodeFor"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isCodeFor"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">RNA gene</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Nucleic_Acid"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryRNASequence"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000072"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryRNASequence"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000072"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">RNA molecule</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#STS_Non_Polymorphic_Marker -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#STS_Non_Polymorphic_Marker">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI_0000055"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasMarkerRole"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasMarkerRole"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000018"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">STS non polymorphic marker</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#Transcript -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#Transcript">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryRNASequence"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000072"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isTranscribedBy"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000004"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#hasPrimaryRNASequence"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000072"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An RNA synthesized on a DNA or RNA template by an RNA polymerase.</rdfs:comment>
-        <rdfs:label xml:lang="en">transcript</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#cDNA -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#cDNA">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">In genetics, complementary DNA (cDNA) is DNA synthesized from a mature mRNA template in a reaction catalyzed by the enzyme reverse transcriptase.(wikipedia)</rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complementary DNA</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#mRNA -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#mRNA">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Transcript"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">messenger RNA</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#miRNA -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#miRNA">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">short(22nt) RNA molecules encoded within normal genomes that have a role in regulation of gene expression and maybe also of chromatin structure. Sometimes called small temporal RNA(stRNA).</rdfs:comment>
-        <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#Human_Molecular_Genetics3"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Micro RNAs</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#msDNA -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#msDNA">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule"/>
-        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">multicopy single-stranded DNA</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#mtDNA -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#mtDNA">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#DNA_Molecule"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#isStructurePartOf"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OGI_0000083"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mitochondrial DNA</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#rRNA -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#rRNA">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ribosomal RNA</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGI.owl#tRNA -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OGI.owl#tRNA">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OGI.owl#RNA_Molecule"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">transfer RNA</rdfs:label>
     </owl:Class>
     
 
